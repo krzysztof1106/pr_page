@@ -1,0 +1,112 @@
+.homeContact {
+  background-color: #ba959d;
+}
+
+.homeContactBox {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px;
+}
+
+.homeContactBox::before {
+  position: absolute;
+  width: 70%;
+  height: 60%;
+  content: '';
+  top: 3px;
+  left: 6px;
+  border-top: 3px solid #3C3C3B;
+  border-left: 3px solid #3C3C3B;
+}
+
+.homeContactBox::after {
+  position: absolute;
+  width: 70%;
+  height: 60%;
+  content: '';
+  bottom: 3px;
+  right: 6px;
+  border-bottom: 3px solid #3C3C3B;
+  border-right: 3px solid #3C3C3B;
+}
+
+.homeContactTile {
+  position: relative;
+  text-align: center;
+  width: 300px;
+}
+
+.homeContactTile:nth-child(2) {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.homeContactHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.homeContactDes {
+  font-weight: 600;
+}
+
+.homeContactTopStyle {
+  border-right: 100vw solid #DFCDCF;
+  border-bottom: 15vh solid #ba959d;
+}
+
+@media (min-width: 769px) and (max-width: 1179px) {
+  .homeContactBox {
+    max-width: 665px;
+    padding: 25px;
+  }
+  .homeContactTile {
+    width: 210px;
+  }
+  .homeContactTile:nth-child(2) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .homeContact {
+    padding-bottom: 25px;
+  }
+  .homeContactBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 200px;
+    padding: 25px;
+  }
+  .homeContactTile {
+    width: 200px;
+  }
+  .homeContactTile:nth-child(2) {
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+/*# sourceMappingURL=contact_style.css.map */

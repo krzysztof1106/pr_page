@@ -1,0 +1,283 @@
+@import "./variables.scss";
+
+//Main box
+nav{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    min-height: 9vh;
+    padding: 20px;
+    z-index: 10;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mainNavBox{
+    //width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navLinksSubtitles{
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    color: $primaryColor_2;
+    display: none;
+}
+
+
+//Main style
+.navbarBgColor{
+    background-color: $primaryColor_1;
+    transition: all 500ms ease;
+}
+
+
+.navLinksFontColor{
+
+    & li{
+        color: $primaryColor_4 !important;
+    }
+
+    & a {
+        text-decoration: none;
+        color: $primaryColor_4; 
+        
+        &:link {
+            text-decoration: none;
+            color: $primaryColor_4; 
+        }
+    
+        &:visited {
+            text-decoration: none;
+            color: r$primaryColor_4; 
+        }
+    
+        &:active {
+            text-decoration: none;
+            color: $primaryColor_4;
+        }
+    
+        &:hover {
+            text-decoration: none;
+            color: $primaryColor_4; 
+        }
+    }
+}
+
+
+//Functions
+.navbarMainBox {
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
+
+    &:first-child {
+        justify-content: flex-start;
+        width: 30%;
+    }
+
+    & ul {
+        margin: 0;
+        padding: 0;
+
+        & li {
+            list-style-type: none;
+        }
+    }
+}
+
+
+.navbarLogoBox {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px;
+    width: 70%;
+    font-weight: 500;
+    color: $primaryColor_2;
+
+    & li{
+        cursor: pointer;
+    }
+}
+
+
+//nav-links animation
+.link_head {
+    position: relative;
+
+    &:before {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background-color: $primaryColor_4;
+        position: absolute;
+        bottom: -10%; left: 0%;
+        transition: all 500ms ease;
+    }
+    &:hover::before {
+        left: 0%;
+        width: 100%;
+    }
+
+    &:after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background-color: $primaryColor_4;
+        position: absolute;
+        top: -10%; right: 0%;
+        transition: all 500ms ease;
+    }
+    &:hover::after {
+        right: 0%;
+        width: 100%;
+    }
+}
+
+.link_body {
+    position: relative;
+
+    &:before {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background-color: $primaryColor_2;
+        position: absolute;
+        bottom: -10%; left: 0%;
+        transition: all 500ms ease;
+    }
+    &:hover::before {
+        left: 0%;
+        width: 100%;
+    }
+
+    &:after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background-color: $primaryColor_2;
+        position: absolute;
+        top: -10%; right: 0%;
+        transition: all 500ms ease;
+    }
+    &:hover::after {
+        right: 0%;
+        width: 100%;
+    }
+}
+
+
+//***************************
+//Burger Toggle
+.burgerToggle{
+    cursor: pointer;
+    display: none;
+}
+
+.burgerToggleBar {
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    border-radius: 1px;
+    background-color: $primaryColor_2;
+    transition: all 500ms ease;
+
+    &:nth-child(2) {
+        width: 25px;
+    }
+}
+
+.burgerToggleBar_2{
+    background-color: $primaryColor_4 !important;
+}
+
+ //Burger animation
+.toggle .burgerLine_1{
+    transform: rotate(-225deg) translate(5px, -6px);
+}
+
+.toggle .burgerLine_2{
+    opacity: 0;
+}
+
+.toggle .burgerLine_3{
+    transform: rotate(225deg) translate(5px, 6px);
+}
+
+
+//***************************
+//Media
+@media screen and (max-width: 1180px) {
+    nav{
+        padding: 15px;
+    }
+    body{
+        overflow-x: hidden;
+    }
+
+    .navbarLogoBox{
+        font-size: 20px;
+    }
+
+    .navbarMainBox {
+        width: 30%;
+    
+        &:first-child {
+            width: 70%;
+        }
+    }
+
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        flex-direction: column;
+        align-items: center;
+        font-size: 18px;
+        width: 100%;
+        transition: transform 0.5s ease-in;
+        background-color: $sidebarColor;
+
+        height: 91vh;
+        top: 9vh;
+
+        & li{
+            opacity: 0;
+        }
+    }
+
+    .nav-active{
+        transform: translateX(0%);
+    }
+
+    .nav-deactive{
+        transform: translateX(100%);
+    }
+
+    .burgerToggle{
+        display: block;
+    }
+} 
+
+
+//***************************
+//Key frames
+@keyframes navLinks_Fade{
+    from{
+        opacity: 0; 
+        transform: translateX(200px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}

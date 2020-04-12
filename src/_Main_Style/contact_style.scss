@@ -1,0 +1,114 @@
+@import "./variables.scss";
+
+$topStyleHeight: 15vh;
+$beforeAfterUpDown: 3px;
+$beforeAfterSides: 6px;
+
+.homeContact{
+    background-color: $primaryColor_1;
+
+}
+
+
+.homeContactBox{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+    padding: $padding_l;
+
+
+    &::before {
+        position: absolute;
+        width: 70%;
+        height: 60%;
+        content: '';
+        top: $beforeAfterUpDown; left: $beforeAfterSides;
+        border-top: 3px solid $primaryColor_2;
+        border-left: 3px solid $primaryColor_2;
+    }
+
+    &::after {
+        position: absolute;
+        width: 70%;
+        height: 60%;
+        content: '';
+        bottom: $beforeAfterUpDown; right: $beforeAfterSides;
+        border-bottom: 3px solid $primaryColor_2;
+        border-right: 3px solid $primaryColor_2;
+    }
+}
+
+.homeContactTile{
+    position: relative;
+    text-align: center;
+    width: 300px;
+
+    &:nth-child(2){
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+}
+
+.homeContactHeader{
+    display: flex;
+    justify-content: center;
+}
+
+.homeContactDes{
+    font-weight: 600;
+}
+
+
+//Style
+.homeContactTopStyle{
+    border-right: 100vw solid $primaryColor_3;
+    border-bottom: $topStyleHeight solid $primaryColor_1;
+}
+
+
+
+//***************************
+//Media
+@media (min-width: 769px) and (max-width: 1179px){
+    .homeContactBox{
+        max-width: 665px;
+        padding: $padding_m;
+    }
+
+    .homeContactTile{
+        width: 210px;
+
+        &:nth-child(2){
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    }
+}
+
+
+@media (max-width: 768px){
+    .homeContact{
+        padding-bottom: $padding_m;
+    }
+
+    .homeContactBox{
+        flex-direction: column;
+        align-items: center;
+        max-width: 200px;
+        padding: $padding_m;
+    }
+
+    .homeContactTile{
+        width: 200px;
+
+        &:nth-child(2){
+            padding-right: 0px;
+            padding-left: 0px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+    }
+}
