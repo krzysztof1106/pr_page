@@ -2,7 +2,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: 'Poppins', sans-serif;
-  background-color: #DFCDCF;
+  background-color: #f2e7e3;
   letter-spacing: 1px;
 }
 
@@ -147,7 +147,7 @@ footer {
           flex-direction: column;
   text-align: center;
   padding: 15px !important;
-  background-color: #DFCDCF;
+  background-color: #f2e7e3;
   color: #3C3C3B;
 }
 
@@ -189,8 +189,8 @@ footer {
 }
 
 .nav_mainBarBox {
-  background-color: #ba959d;
-  padding: 0 20px;
+  background-color: #d4b6b8;
+  padding: 0 40px;
   width: 100%;
   height: 74px;
   -webkit-box-sizing: border-box;
@@ -286,7 +286,7 @@ footer {
 .nav_sidebarBackground {
   position: absolute;
   display: none;
-  background-color: rgba(186, 149, 157, 0.95);
+  background-color: rgba(212, 182, 184, 0.95);
   z-index: -1;
   top: 0px;
   left: 0px;
@@ -348,6 +348,9 @@ footer {
 }
 
 @media screen and (max-width: 1180px) {
+  .nav_mainBarBox {
+    padding: 0 20px;
+  }
   .nav_mainLinksBox {
     position: absolute;
     -webkit-box-orient: vertical;
@@ -405,13 +408,13 @@ footer {
           justify-content: center;
   margin-top: 30px;
   margin-bottom: 30px;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(35%, #ba959d), color-stop(35%, #DFCDCF));
-  background-image: linear-gradient(90deg, #ba959d 35%, #DFCDCF 35%);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(35%, #d4b6b8), color-stop(35%, #f2e7e3));
+  background-image: linear-gradient(90deg, #d4b6b8 35%, #f2e7e3 35%);
 }
 
 .homeTreatPcRowStyle:nth-child(even) {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(65%, #DFCDCF), color-stop(65%, #ba959d));
-  background-image: linear-gradient(90deg, #DFCDCF 65%, #ba959d 65%);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(65%, #f2e7e3), color-stop(65%, #d4b6b8));
+  background-image: linear-gradient(90deg, #f2e7e3 65%, #d4b6b8 65%);
 }
 
 .homeTreatPcRow {
@@ -484,7 +487,7 @@ footer {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #1b464c;
+  background-color: #3C3C3B;
   top: -20%;
   left: -20%;
   z-index: -1;
@@ -502,7 +505,7 @@ footer {
   top: -5%;
   right: -20%;
   z-index: -1;
-  background-image: repeating-linear-gradient(45deg, #1b464c, #1b464c 7px, transparent 7px, transparent 14px);
+  background-image: repeating-linear-gradient(45deg, #3C3C3B, #3C3C3B 7px, transparent 7px, transparent 14px);
 }
 
 .homeTreatPcStyle_3 {
@@ -513,7 +516,7 @@ footer {
   bottom: 15%;
   left: -20%;
   z-index: -1;
-  background-image: repeating-linear-gradient(135deg, #1b464c, #1b464c 7px, transparent 7px, transparent 14px);
+  background-image: repeating-linear-gradient(135deg, #3C3C3B, #3C3C3B 7px, transparent 7px, transparent 14px);
 }
 
 .homeTreatPcStyle_4 {
@@ -521,7 +524,7 @@ footer {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #1b464c;
+  background-color: #3C3C3B;
   bottom: -20%;
   right: -20%;
   z-index: -1;
@@ -568,7 +571,7 @@ footer {
   height: 50%;
   width: 100%;
   top: 25%;
-  background-color: #ba959d;
+  background-color: #d4b6b8;
   z-index: -1;
 }
 
@@ -620,7 +623,7 @@ footer {
 }
 
 .homeContact {
-  background-color: #ba959d;
+  background-color: #d4b6b8;
 }
 
 .homeContactBox {
@@ -687,8 +690,8 @@ footer {
 }
 
 .homeContactTopStyle {
-  border-right: 100vw solid #DFCDCF;
-  border-bottom: 15vh solid #ba959d;
+  border-right: 100vw solid #f2e7e3;
+  border-bottom: 15vh solid #d4b6b8;
 }
 
 @media (min-width: 769px) and (max-width: 1179px) {
@@ -739,7 +742,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #DFCDCF;
+  background-color: #f2e7e3;
   padding-top: 0 !important;
 }
 
@@ -773,21 +776,21 @@ footer {
   width: 100%;
   z-index: 2;
   height: 90%;
-  background-color: #1b464c;
+  background-color: #3C3C3B;
   top: 5%;
 }
 
 .homeTeamStyle:nth-child(2) {
   z-index: 1;
   height: 80%;
-  background-color: #ba959d;
+  background-color: #d4b6b8;
   top: 10%;
   left: 15%;
 }
 
 .homeMap {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #ba959d), color-stop(70%, #DFCDCF));
-  background-image: linear-gradient(#ba959d 70%, #DFCDCF 70%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #d4b6b8), color-stop(70%, #f2e7e3));
+  background-image: linear-gradient(#d4b6b8 70%, #f2e7e3 70%);
 }
 
 .homeMapBox {

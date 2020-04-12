@@ -14,7 +14,7 @@ const NavLogo = (props) => {
     return (
         <Link to=''>
             <div className="nav_logoBox" onClick={navLogoSA}>
-                        Pinroo
+                        Piooo
             </div>
         </Link>
     );

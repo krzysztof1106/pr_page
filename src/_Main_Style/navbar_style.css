@@ -9,7 +9,7 @@
 
 .nav_mainBarBox {
   background-color: #ba959d;
-  padding: 0 20px;
+  padding: 0 40px;
   width: 100%;
   height: 74px;
   -webkit-box-sizing: border-box;
@@ -167,6 +167,9 @@
 }
 
 @media screen and (max-width: 1180px) {
+  .nav_mainBarBox {
+    padding: 0 20px;
+  }
   .nav_mainLinksBox {
     position: absolute;
     -webkit-box-orient: vertical;

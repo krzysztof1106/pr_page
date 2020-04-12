@@ -10,7 +10,6 @@ import Map from './Map/MapContext';                                     //ok
 const Home = ()  => {
     return (
         <div>
-            <Contact />
             <Map />
         </div>
     );
