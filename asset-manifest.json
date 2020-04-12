@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/pr_page/static/css/main.95de6aa7.chunk.css",
+    "main.css": "/pr_page/static/css/main.96f48cb3.chunk.css",
     "main.js": "/pr_page/static/js/main.dfdfe7d4.chunk.js",
     "main.js.map": "/pr_page/static/js/main.dfdfe7d4.chunk.js.map",
     "runtime-main.js": "/pr_page/static/js/runtime-main.d2967837.js",
@@ -8,9 +8,9 @@
     "static/js/2.67115df8.chunk.js": "/pr_page/static/js/2.67115df8.chunk.js",
     "static/js/2.67115df8.chunk.js.map": "/pr_page/static/js/2.67115df8.chunk.js.map",
     "index.html": "/pr_page/index.html",
-    "precache-manifest.25bc6828060a46341da08c581f7df581.js": "/pr_page/precache-manifest.25bc6828060a46341da08c581f7df581.js",
+    "precache-manifest.6845a7afcdf2409282decf67315b4a86.js": "/pr_page/precache-manifest.6845a7afcdf2409282decf67315b4a86.js",
     "service-worker.js": "/pr_page/service-worker.js",
-    "static/css/main.95de6aa7.chunk.css.map": "/pr_page/static/css/main.95de6aa7.chunk.css.map",
+    "static/css/main.96f48cb3.chunk.css.map": "/pr_page/static/css/main.96f48cb3.chunk.css.map",
     "static/js/2.67115df8.chunk.js.LICENSE.txt": "/pr_page/static/js/2.67115df8.chunk.js.LICENSE.txt",
     "static/media/FP_TeamPic.jpg": "/pr_page/static/media/FP_TeamPic.4f286d94.jpg",
     "static/media/Front_Pic2.jpg": "/pr_page/static/media/Front_Pic2.3b17fad6.jpg",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.d2967837.js",
     "static/js/2.67115df8.chunk.js",
-    "static/css/main.95de6aa7.chunk.css",
+    "static/css/main.96f48cb3.chunk.css",
     "static/js/main.dfdfe7d4.chunk.js"
   ]
 }
