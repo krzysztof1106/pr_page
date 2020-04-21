@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/pr_page/static/css/main.f77c4601.chunk.css",
-    "main.js": "/pr_page/static/js/main.9238bcec.chunk.js",
-    "main.js.map": "/pr_page/static/js/main.9238bcec.chunk.js.map",
+    "main.css": "/pr_page/static/css/main.7a58259f.chunk.css",
+    "main.js": "/pr_page/static/js/main.a7f10f06.chunk.js",
+    "main.js.map": "/pr_page/static/js/main.a7f10f06.chunk.js.map",
     "runtime-main.js": "/pr_page/static/js/runtime-main.d2967837.js",
     "runtime-main.js.map": "/pr_page/static/js/runtime-main.d2967837.js.map",
-    "static/js/2.74862aa0.chunk.js": "/pr_page/static/js/2.74862aa0.chunk.js",
-    "static/js/2.74862aa0.chunk.js.map": "/pr_page/static/js/2.74862aa0.chunk.js.map",
+    "static/js/2.c02d3dcf.chunk.js": "/pr_page/static/js/2.c02d3dcf.chunk.js",
+    "static/js/2.c02d3dcf.chunk.js.map": "/pr_page/static/js/2.c02d3dcf.chunk.js.map",
     "index.html": "/pr_page/index.html",
-    "precache-manifest.279fe49a89e07bd15297319e9a8ddf2d.js": "/pr_page/precache-manifest.279fe49a89e07bd15297319e9a8ddf2d.js",
+    "precache-manifest.64eb13695e46624ff640844b5f4dcbe6.js": "/pr_page/precache-manifest.64eb13695e46624ff640844b5f4dcbe6.js",
     "service-worker.js": "/pr_page/service-worker.js",
-    "static/css/main.f77c4601.chunk.css.map": "/pr_page/static/css/main.f77c4601.chunk.css.map",
-    "static/js/2.74862aa0.chunk.js.LICENSE.txt": "/pr_page/static/js/2.74862aa0.chunk.js.LICENSE.txt",
+    "static/css/main.7a58259f.chunk.css.map": "/pr_page/static/css/main.7a58259f.chunk.css.map",
+    "static/js/2.c02d3dcf.chunk.js.LICENSE.txt": "/pr_page/static/js/2.c02d3dcf.chunk.js.LICENSE.txt",
     "static/media/Contact_MapPic.jpg": "/pr_page/static/media/Contact_MapPic.0f6fb33e.jpg",
     "static/media/Front_Pic2.jpg": "/pr_page/static/media/Front_Pic2.3b17fad6.jpg",
     "static/media/Home_TeamPic_1.jpg": "/pr_page/static/media/Home_TeamPic_1.4f286d94.jpg",
     "static/media/MAPA.jpg": "/pr_page/static/media/MAPA.0f6fb33e.jpg",
+    "static/media/TestPic.jpg": "/pr_page/static/media/TestPic.a748dd73.jpg",
     "static/media/all.css": "/pr_page/static/media/fa-solid-900.ec763292.svg",
     "static/media/styliacjaWlosow.jpg": "/pr_page/static/media/styliacjaWlosow.a748dd73.jpg",
     "static/media/stylizacjaBrwi.jpg": "/pr_page/static/media/stylizacjaBrwi.4f286d94.jpg",
@@ -24,8 +25,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.d2967837.js",
-    "static/js/2.74862aa0.chunk.js",
-    "static/css/main.f77c4601.chunk.css",
-    "static/js/main.9238bcec.chunk.js"
+    "static/js/2.c02d3dcf.chunk.js",
+    "static/css/main.7a58259f.chunk.css",
+    "static/js/main.a7f10f06.chunk.js"
   ]
 }
