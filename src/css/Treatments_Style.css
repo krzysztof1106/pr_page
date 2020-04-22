@@ -1,0 +1,54 @@
+.offset {
+  width: 100%;
+  height: 100px;
+}
+
+.tp_rowBox {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.tp_rowBox:nth-child(odd) {
+  background-color: white;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.tp_picBox {
+  width: 40%;
+  max-width: 400px;
+}
+
+.tp_picBox img {
+  width: 100%;
+}
+
+.tp_descriptionBox {
+  width: 60%;
+  max-width: 700px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .tp_rowBox {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+}
+/*# sourceMappingURL=Treatments_Style.css.map */

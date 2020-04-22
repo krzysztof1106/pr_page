@@ -1,0 +1,250 @@
+@import "./Variables_Style.scss";
+
+
+//******************************************************
+//Main containers
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    background-color: $primaryColor_3;
+    letter-spacing: 1px;
+}
+
+nav{
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+header{
+    overflow: hidden;
+    box-sizing: border-box; 
+}
+
+article{
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+footer{
+    overflow: hidden;
+    box-sizing: border-box; 
+}
+
+
+
+//******************************************************
+//Links
+a, a:link, a:visited, a:active, a:hover {
+    text-decoration: none;
+    color: $primaryColor_2; 
+}
+    /*
+    &:link {
+        text-decoration: none;
+        color: $primaryColor_2; 
+    }
+
+    &:visited {
+        text-decoration: none;
+        color: r$primaryColor_2; 
+    }
+
+    &:active {
+        text-decoration: none;
+        color: $primaryColor_2;
+    }
+
+    &:hover {
+        text-decoration: none;
+        color: $primaryColor_2; 
+    }
+    */
+
+
+//******************************************************
+//Custom containers
+.MainContent{
+    overflow: hidden;
+    
+    //width: 100%;
+
+    color: $primaryColor_2;
+    padding: $padding_l;
+}
+
+.MainTopic{
+    font-weight: bold;
+    text-align: center;
+
+    font-size: $topicFont_l;
+    padding-bottom: $padding_l;
+}
+
+.MainHeader{
+    font-weight: bold;
+    padding: $padding_s;
+
+    font-size: $headerFont_l;
+}
+
+.MainDescription{
+    font-size: $descriptionFont_l;
+}
+
+.MainIcon{
+    font-size: $iconFont_l;
+}
+
+
+
+
+.MainBox{
+    overflow: hidden;
+    box-sizing: border-box;
+    color: $primaryColor_2;
+    width: 100%;
+}
+
+
+
+
+
+
+
+.TopicBox{
+    font-weight: bold;
+
+    font-size: $topicFont_l;
+    padding-bottom: $padding_l;
+}
+
+.HeaderBox{
+    font-weight: bold;
+
+    font-size: $headerFont_l;
+}
+
+.DescriptionBox{
+    font-size: $descriptionFont_l;
+}
+
+.IconBox{
+    font-size: $iconFont_l;
+}
+
+
+
+//******************************************************
+//Custom styles
+.MainBorder{
+    margin: auto;
+    height: 2px;
+    margin-bottom: 5px;
+    background-color: $primaryColor_2;
+
+    margin-top: $padding_l;
+    width: 50vw;
+}
+
+
+//******************************************************
+//Media
+@media (min-width: 769px) and (max-width: 1179px){
+
+    .MainContent{
+        padding: $padding_m;
+    }
+
+    .MainTopic{
+        font-size: $topicFont_m;
+        padding-bottom: $padding_m;
+    }
+
+    .MainHeader{
+        font-size: $headerFont_m;
+    }
+
+    .MainDescription{
+        font-size: $descriptionFont_m;
+    }
+    
+    .MainIcon{
+        font-size: $iconFont_m;
+    }
+
+
+    .TopicBox{
+        font-size: $topicFont_m;
+        padding-bottom: $padding_m;
+    }
+
+    .HeaderBox{
+        font-size: $headerFont_m;
+    }
+
+    .DescriptionBox{
+        font-size: $descriptionFont_m;
+    }
+
+    .IconBox{
+        font-size: $iconFont_m;
+    }
+
+    //Styles
+    .MainBorder{
+        width: 60vw;
+        margin-top: $padding_m;
+    }
+    
+}
+
+
+@media (max-width: 768px){
+
+    .MainContent{
+        padding: $padding_s;
+    }
+    
+    .MainTopic{
+        font-size: $topicFont_s;
+        padding-bottom: $padding_s;
+    }
+
+    .MainHeader{
+        font-size: $headerFont_s;
+    }
+
+    .MainDescription{
+        font-size: $descriptionFont_s;
+    }
+    
+    .MainIcon{
+        font-size: $iconFont_s;
+    }
+
+
+    .TopicBox{
+        font-size: $topicFont_s;
+        padding-bottom: $padding_s;
+    }
+
+    .HeaderBox{
+        font-size: $headerFont_s;
+    }
+
+    .DescriptionBox{
+        font-size: $descriptionFont_s;
+    }
+
+    .IconBox{
+        font-size: $iconFont_s;
+    }
+
+    //Styles
+    .MainBorder{
+        width: 70vw;
+        margin-top: $padding_s;
+    }
+
+}

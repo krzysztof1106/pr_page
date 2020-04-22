@@ -1,0 +1,197 @@
+.nav_mainBox {
+  position: fixed;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #3C3C3B;
+  z-index: 10;
+  width: 100%;
+}
+
+.nav_mainBarBox {
+  background-color: #d4b6b8;
+  padding: 0 40px;
+  width: 100%;
+  height: 74px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav_logoBox {
+  font-size: 1.75em;
+}
+
+.nav_spacerBox {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.nav_mainLinksBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+}
+
+.nav_mainLinksBox-Active {
+  -webkit-transition: -webkit-transform 0.3s linear;
+  transition: -webkit-transform 0.3s linear;
+  transition: transform 0.3s linear;
+  transition: transform 0.3s linear, -webkit-transform 0.3s linear;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.nav_linksMainBox-Deactive {
+  -webkit-transition: -webkit-transform 0.3s linear;
+  transition: -webkit-transform 0.3s linear;
+  transition: transform 0.3s linear;
+  transition: transform 0.3s linear, -webkit-transform 0.3s linear;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.nav_linkHeader {
+  position: relative;
+}
+
+.nav_linkHeader:before {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color: #3C3C3B;
+  position: absolute;
+  bottom: -10%;
+  left: 0%;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.nav_linkHeader:hover::before {
+  left: 0%;
+  width: 100%;
+}
+
+.nav_linkHeader:after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color: #3C3C3B;
+  position: absolute;
+  top: -10%;
+  right: 0%;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.nav_linkHeader:hover::after {
+  right: 0%;
+  width: 100%;
+}
+
+.nav_sidebarBackground {
+  position: absolute;
+  display: none;
+  background-color: rgba(212, 182, 184, 0.95);
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 10000px;
+}
+
+.nav_sidebarBackground-Active {
+  -webkit-transition: -webkit-transform 0.3s linear;
+  transition: -webkit-transform 0.3s linear;
+  transition: transform 0.3s linear;
+  transition: transform 0.3s linear, -webkit-transform 0.3s linear;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.nav_sidebarBackground-Deactive {
+  -webkit-transition: -webkit-transform 0.3s linear;
+  transition: -webkit-transform 0.3s linear;
+  transition: transform 0.3s linear;
+  transition: transform 0.3s linear, -webkit-transform 0.3s linear;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.burgerToggle {
+  cursor: pointer;
+  display: none;
+}
+
+.burgerToggleBar {
+  width: 30px;
+  height: 2px;
+  margin: 5px;
+  border-radius: 1px;
+  background-color: #3C3C3B;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.burgerToggleBar:nth-child(2) {
+  width: 20px;
+}
+
+.toggle .burgerLine_1 {
+  -webkit-transform: rotate(135deg) translate(5px, -5px);
+          transform: rotate(135deg) translate(5px, -5px);
+}
+
+.toggle .burgerLine_2 {
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
+  opacity: 0;
+}
+
+.toggle .burgerLine_3 {
+  -webkit-transform: rotate(-135deg) translate(5px, 5px);
+          transform: rotate(-135deg) translate(5px, 5px);
+}
+
+@media screen and (max-width: 1180px) {
+  .nav_mainBarBox {
+    padding: 0 20px;
+  }
+  .nav_mainLinksBox {
+    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 100px;
+    left: 0px;
+    width: 100%;
+  }
+  .nav_mainBarBox {
+    height: 54px;
+  }
+  .nav_linksMainBox-Deactive {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  .nav_sidebarBackground {
+    display: block;
+  }
+  .burgerToggle {
+    display: block;
+  }
+}
+/*# sourceMappingURL=Navbar_Style.css.map */

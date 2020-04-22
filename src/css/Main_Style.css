@@ -1,0 +1,193 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f2e7e3;
+  letter-spacing: 1px;
+}
+
+nav {
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+article {
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+footer {
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a, a:link, a:visited, a:active, a:hover {
+  text-decoration: none;
+  color: #3C3C3B;
+}
+
+/*
+    &:link {
+        text-decoration: none;
+        color: $primaryColor_2; 
+    }
+
+    &:visited {
+        text-decoration: none;
+        color: r$primaryColor_2; 
+    }
+
+    &:active {
+        text-decoration: none;
+        color: $primaryColor_2;
+    }
+
+    &:hover {
+        text-decoration: none;
+        color: $primaryColor_2; 
+    }
+    */
+.MainContent {
+  overflow: hidden;
+  color: #3C3C3B;
+  padding: 21px;
+}
+
+.MainTopic {
+  font-weight: bold;
+  text-align: center;
+  font-size: 26px;
+  padding-bottom: 21px;
+}
+
+.MainHeader {
+  font-weight: bold;
+  padding: 15px;
+  font-size: 16px;
+}
+
+.MainDescription {
+  font-size: 15px;
+}
+
+.MainIcon {
+  font-size: 40px;
+}
+
+.MainBox {
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #3C3C3B;
+  width: 100%;
+}
+
+.TopicBox {
+  font-weight: bold;
+  font-size: 26px;
+  padding-bottom: 21px;
+}
+
+.HeaderBox {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.DescriptionBox {
+  font-size: 15px;
+}
+
+.IconBox {
+  font-size: 40px;
+}
+
+.MainBorder {
+  margin: auto;
+  height: 2px;
+  margin-bottom: 5px;
+  background-color: #3C3C3B;
+  margin-top: 21px;
+  width: 50vw;
+}
+
+@media (min-width: 769px) and (max-width: 1179px) {
+  .MainContent {
+    padding: 18px;
+  }
+  .MainTopic {
+    font-size: 22px;
+    padding-bottom: 18px;
+  }
+  .MainHeader {
+    font-size: 14px;
+  }
+  .MainDescription {
+    font-size: 13px;
+  }
+  .MainIcon {
+    font-size: 35px;
+  }
+  .TopicBox {
+    font-size: 22px;
+    padding-bottom: 18px;
+  }
+  .HeaderBox {
+    font-size: 14px;
+  }
+  .DescriptionBox {
+    font-size: 13px;
+  }
+  .IconBox {
+    font-size: 35px;
+  }
+  .MainBorder {
+    width: 60vw;
+    margin-top: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .MainContent {
+    padding: 15px;
+  }
+  .MainTopic {
+    font-size: 18px;
+    padding-bottom: 15px;
+  }
+  .MainHeader {
+    font-size: 12px;
+  }
+  .MainDescription {
+    font-size: 11px;
+  }
+  .MainIcon {
+    font-size: 30px;
+  }
+  .TopicBox {
+    font-size: 18px;
+    padding-bottom: 15px;
+  }
+  .HeaderBox {
+    font-size: 12px;
+  }
+  .DescriptionBox {
+    font-size: 11px;
+  }
+  .IconBox {
+    font-size: 30px;
+  }
+  .MainBorder {
+    width: 70vw;
+    margin-top: 15px;
+  }
+}
+/*# sourceMappingURL=Main_Style.css.map */

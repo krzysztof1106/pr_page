@@ -1,0 +1,192 @@
+@import "./Variables_Style.scss";
+
+
+//******************************************************
+//Main box
+.nav_mainBox{
+    position: fixed;
+    box-sizing: border-box;
+    color: $primaryColor_2;
+
+    z-index: 10;
+    width: 100%;
+}
+
+.nav_mainBarBox{
+    background-color: $primaryColor_1;
+    padding: 0 40px;
+    width: 100%;
+    height: 74px;
+
+    box-sizing: border-box; 
+    display: flex;
+    align-items: center;
+}
+
+.nav_logoBox{
+    font-size: 1.75em;
+}
+
+.nav_spacerBox{
+    flex: 1;
+}
+
+
+
+
+//******************************************************
+//Links Box
+.nav_mainLinksBox{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 50%;
+}
+
+
+.nav_mainLinksBox-Active{
+    transition: transform 0.3s linear;
+    transform: translateX(0%);
+}
+
+.nav_linksMainBox-Deactive{
+    transition: transform 0.3s linear;
+    transform: translateX(0%);
+}
+
+
+//nav-links animation
+.nav_linkHeader {
+    position: relative;
+
+    &:before {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background-color: $primaryColor_2;
+        position: absolute;
+        bottom: -10%; left: 0%;
+        transition: all 500ms ease;
+    }
+    &:hover::before {
+        left: 0%;
+        width: 100%;
+    }
+
+    &:after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background-color: $primaryColor_2;
+        position: absolute;
+        top: -10%; right: 0%;
+        transition: all 500ms ease;
+    }
+    &:hover::after {
+        right: 0%;
+        width: 100%;
+    }
+}
+
+
+
+
+//******************************************************
+//Sidebar
+.nav_sidebarBackground{
+    position: absolute;
+    display: none;
+    background-color: $sidebarColor;
+
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 10000px;
+}
+
+.nav_sidebarBackground-Active{
+    transition: transform 0.3s linear;
+    transform: translateX(0%);
+}
+
+.nav_sidebarBackground-Deactive{
+    transition: transform 0.3s linear;
+    transform: translateX(-100%);
+}
+
+
+
+
+//******************************************************
+//Burger Toggle
+.burgerToggle{
+    cursor: pointer;
+    display: none;
+}
+
+.burgerToggleBar {
+    width: 30px;
+    height: 2px;
+    margin: 5px;
+    border-radius: 1px;
+    background-color: $primaryColor_2;
+    transition: all 500ms ease;
+
+    &:nth-child(2) {
+        width: 20px;
+    }
+}
+
+ //Burger animation
+.toggle .burgerLine_1{
+    transform: rotate(135deg) translate(5px, -5px);
+}
+
+.toggle .burgerLine_2{
+    transform: translateX(-20px);
+    opacity: 0;
+}
+
+.toggle .burgerLine_3{
+    transform: rotate(-135deg) translate(5px, 5px);
+}
+
+
+
+
+//******************************************************
+//Media
+@media screen and (max-width: 1180px) {
+
+    .nav_mainBarBox{
+        padding: 0 20px;
+    }
+
+    .nav_mainLinksBox{
+        position: absolute;
+        flex-direction: column;
+
+        top: 100px;
+        left: 0px;
+        width: 100%;
+    }
+
+    .nav_mainBarBox{
+        height: 54px;
+    }
+    
+    .nav_linksMainBox-Deactive{
+        transform: translateX(100%);
+    }
+
+    .nav_sidebarBackground{
+        display: block;
+    }
+
+    .burgerToggle{
+        display: block;
+    }
+}

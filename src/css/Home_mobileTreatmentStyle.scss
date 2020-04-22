@@ -1,0 +1,82 @@
+@import "./Variables_Style.scss";
+
+
+
+//Main boxes
+.homeTreatMobileBox{
+    display: none;
+    margin-bottom: 50px;
+    position: relative;
+    color: $primaryColor_2; 
+}
+
+.homeTreatMobileRow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+//Content boxes
+.homeTreatMobileContentBox{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+.homeTreatMobileStyling{
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    top: 25%;
+    background-color: $primaryColor_1;
+
+    z-index: -1;
+}
+
+
+.homeTreatMobilePic{
+    display: flex;
+    margin-top: $padding_s;
+    margin-bottom: $padding_s;
+    align-items: center;
+    width: 60vw;
+
+    & img{
+        width: 100%;
+    }
+}
+
+.homeTreatMobileDes{
+    font-size: $headerFont_m;
+    font-weight: bold;
+    border-bottom: 1px solid $primaryColor_2;
+}
+
+.homeTreatMobileMore{
+    font-size: $descriptionFont_s;
+    text-align: center;
+}
+
+
+
+//Button boxes
+.homeTreatMobileBtnBox{
+    display: flex;
+    justify-content: center;
+    width: 20vw;
+}
+
+.homeTreatMobileBtn{
+    font-size: $iconFont_s;
+}
+
+//***************************
+//Media
+@media (max-width: 768px){
+    .homeTreatMobileBox{
+        display: block;
+    }
+}

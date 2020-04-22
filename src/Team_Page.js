@@ -1,17 +1,14 @@
 import React from 'react';
 
-
-/* ---------- App imports ---------- */
-import Team from './Team/TeamContext';
+import TeamCtn from './JS_Files/Team_Page/Team_Content';
 
 
-
-const Homme = ()  => {
+const TeamPage = ()  => {
     return (
-        <div>
-            <Team />
-        </div>
+        <article>
+            <TeamCtn />
+        </article>
     );
 }
 
-export default Homme;
+export default TeamPage;

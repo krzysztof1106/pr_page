@@ -1,0 +1,31 @@
+@import "./Variables_Style.scss";
+
+.homeMap {
+    background-image: linear-gradient($primaryColor_1 70%, $primaryColor_3 70%);
+
+    //width: 100%;
+}
+
+.homeMapBox{
+    width: 60%;
+    margin: auto;
+    max-width: 1500px;
+
+    & img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1179px){
+    .homeMapBox{
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px){
+    .homeMapBox{
+        width: 100vw;
+        margin-left: -$padding_s;
+    }
+}

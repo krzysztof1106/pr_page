@@ -2,17 +2,16 @@ import React from 'react';
 
 
 /* ---------- App imports ---------- */
-import Contact from './Contact/ContactContext';                         //ok
-import Map from './Map/MapContext';                                     //ok
+import ContactCtn from './JS_Files/Contact_Page/CP_Content';
 
 
 
-const Home = ()  => {
+const ContactPage = ()  => {
     return (
-        <div>
-            <Map />
-        </div>
+        <article>
+            <ContactCtn />
+        </article>
     );
 }
 
-export default Home;
+export default ContactPage;

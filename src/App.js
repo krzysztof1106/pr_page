@@ -4,12 +4,12 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 
 /* ---------- App imports ---------- */
-import Navbar from './Navigaton/Navbar';
-import Footer from './Footer/FooteContext';
+import Navbar from './JS_Files/Navigaton/Navbar';
+import Footer from './JS_Files/Footer/Footer';
 
 import  Home_Page from './Home_Page';
 import  Treatments_Page from './Treatments_Page';
-import  Pricelist_Page from './Pricelist/Pricelist_Page';
+import  Pricelist_Page from './Pricelist_Page';
 import  Team_Page from './Team_Page';
 import Contact_Page from './Contact_Page';
 

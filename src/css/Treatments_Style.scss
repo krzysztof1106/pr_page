@@ -1,0 +1,47 @@
+@import "./Variables_Style.scss";
+
+
+
+.offset{
+    width: 100%;
+    height: 100px;
+}
+
+
+.tp_rowBox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: row;
+
+    &:nth-child(odd){
+        background-color: white;
+        flex-direction: row-reverse;
+    }
+}
+
+
+.tp_picBox{
+    width: 40%;
+    max-width: 400px;
+
+    & img{
+        width: 100%;
+    }
+}
+
+
+.tp_descriptionBox{
+    width: 60%;
+    max-width: 700px;
+    text-align: center;
+}
+
+
+@media (max-width: 768px){
+    .tp_rowBox{
+        flex-direction: column !important;
+    }
+}

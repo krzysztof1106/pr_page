@@ -2,24 +2,25 @@ import React from 'react';
 
 
 /* ---------- App imports ---------- */
-import FrontPic from './Front_Pic/Front_Pic';
-import FPTreatments from './Treatments/FP_Treatments_Context';          //ok
-import Team from './Team/TeamContext';                                  //ok
-import Contact from './Contact/ContactContext';                         //ok
-import Map from './Map/MapContext';                                     //ok
+import HomeFrontPic from './JS_Files/Home_Page/Home_FrontPic/Home_FrontPic';
+import HomeTreatments from './JS_Files/Home_Page/Home_Treatments/Home_Treatment';
+import HomeTeam from './JS_Files/Home_Page/Home_Team/Home_TeamContent';
+import HomeMap from './JS_Files/Home_Page/Home_Map/Home_Map';
+
+import HomeContact from './JS_Files/Home_Page/Home_Contact/HP_ContactContent';
 
 
 
-const Home = ()  => {
+const HomePage = ()  => {
     return (
         <div>
-            <FrontPic />
-            <FPTreatments />
-            <Team />
-            <Contact />
-            <Map />
+            <HomeFrontPic />
+            <HomeTreatments />
+            <HomeTeam />
+            <HomeContact />
+            <HomeMap />
         </div>
     );
 }
 
-export default Home;
+export default HomePage;

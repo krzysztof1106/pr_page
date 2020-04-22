@@ -2,15 +2,15 @@ import React from 'react';
 
 
 /* ---------- App imports ---------- */
-import FPTreatments from './Treatments/FP_Treatments_Context';          //ok
+import TreatCtn from './JS_Files/Treatmets_Page/Treatments_Content';
 
 
-const Homme = ()  => {
+const TreatPage = ()  => {
     return (
-        <div>
-            <FPTreatments />
-        </div>
+        <article>
+            <TreatCtn />
+        </article>
     );
 }
 
-export default Homme;
+export default TreatPage;
