@@ -1,14 +1,17 @@
 import React from 'react';
 
-//All imports
-import HomePcTreat from "./Home_PcTreatments";
-import HomeMobTreat from "./Home_MobileTreatments";
+//Iimports
+import Topic from "../../_Main_Components/Middle_Topic";
+import HomePcTreat from "./Home_PcTreatmentsContent";
+import HomeMobTreat from "./Home_MobTreatmentsContent";
+
 
 
 const HomeTreatments = () => {
 
     return (
         <article>
+            <Topic topic="Oferowane zabiegi" />
             <HomePcTreat />
             <HomeMobTreat />
         </article>

@@ -8,8 +8,6 @@ const HomeTeamCtx = () => {
 
     return (
         <div className="MainContent homeTeamBox">
-            <div className="MainBorder"></div>
-            <div className="MainTopic">Nasz zespół</div>
             <div className="homeTeamContentBox">
                 <div className="homeTeamStyle"></div>
                 <div className="homeTeamStyle"></div>

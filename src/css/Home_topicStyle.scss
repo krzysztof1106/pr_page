@@ -1,0 +1,19 @@
+@import "./Variables_Style.scss";
+
+
+.hp_topicMainBox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hp_topicText{
+    padding: 0 1em;
+}
+
+.hp_topicBeam{
+    width: 15%;
+    height: 2px;
+    background-color: $primaryColor_2;
+}

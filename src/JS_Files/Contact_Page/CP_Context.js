@@ -5,8 +5,8 @@ const ContactCtx = (props) => {
 
     return (
             <div className="CP_contentRow">
-                <div className="CP_headerBox HeaderBox">{props.cpHeader}</div>
-                <div className="DescriptionBox">{props.cpDescription}</div>
+                <div className="CP_headerBox HeaderBox">{props.header}</div>
+                <div className="DescriptionBox">{props.description}</div>
             </div>
     );
 }

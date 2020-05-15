@@ -1,6 +1,7 @@
 @import "./Variables_Style.scss";
 
 
+
 //******************************************************
 //Main box
 .nav_mainBox{
@@ -33,33 +34,34 @@
 
 
 
-
 //******************************************************
 //Links Box
 .nav_mainLinksBox{
     display: flex;
     text-align: center;
     align-items: center;
-    justify-content: space-between;
-
-    width: 50%;
+    
+    //justify-content: space-between;
+    //width: 50%;
 }
 
-
-.nav_mainLinksBox-Active{
+.nav_linksActive{
     transition: transform 0.3s linear;
     transform: translateX(0%);
 }
 
-.nav_linksMainBox-Deactive{
+.nav_linksDeactive{
     transition: transform 0.3s linear;
     transform: translateX(0%);
 }
+
 
 
 //nav-links animation
 .nav_linkHeader {
     position: relative;
+    margin-left: 2rem;
+    margin-bottom: 0;
 
     &:before {
         content: '';
@@ -92,7 +94,6 @@
 
 
 
-
 //******************************************************
 //Sidebar
 .nav_sidebarBackground{
@@ -116,7 +117,6 @@
     transition: transform 0.3s linear;
     transform: translateX(-100%);
 }
-
 
 
 
@@ -156,29 +156,34 @@
 
 
 
-
 //******************************************************
 //Media
 @media screen and (max-width: 1180px) {
+
+    .nav_linkHeader {
+        margin-left: 0;       
+        margin-bottom: 3rem;
+    }
 
     .nav_mainBarBox{
         padding: 0 20px;
     }
 
+    .nav_mainBarBox{
+        height: 54px;
+    }
+
     .nav_mainLinksBox{
         position: absolute;
         flex-direction: column;
+        height: auto;
 
-        top: 100px;
+        top: 84px;
         left: 0px;
         width: 100%;
     }
 
-    .nav_mainBarBox{
-        height: 54px;
-    }
-    
-    .nav_linksMainBox-Deactive{
+    .nav_linksDeactive{
         transform: translateX(100%);
     }
 

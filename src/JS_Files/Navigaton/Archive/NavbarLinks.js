@@ -21,21 +21,8 @@ import LinksSkt from "./LinkSkt";
 
 const NavLinks = (props) => {
 
-    /*
-    let currentDisplayHeight = window.innerHeight;   
-    let sidebarHeight = currentDisplayHeight - 162;;
-    style={{ height: sidebarHeight}}
-    */
-
-    let navbarClassName = "nav_mainLinksBox nav_linksDeactive";
-    
-    if (props.sidebarStatus){
-        navbarClassName = "nav_mainLinksBox nav_linksActive";
-    };
-
-
     return(
-        <div className={navbarClassName}>
+        <div className="nav_mainLinksBox">
             <LinksSkt header={mainMenu} link={mainMenuLink} navHeaderClick={props.navLinksClick}/>
             <LinksSkt header={treatments} link={treatmentsLink} navHeaderClick={props.navLinksClick}/>
             <LinksSkt header={pricelist} link={pricelistLink} navHeaderClick={props.navLinksClick}/>

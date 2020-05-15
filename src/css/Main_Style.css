@@ -19,6 +19,7 @@ header {
 }
 
 article {
+  color: #3C3C3B;
   overflow: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -35,27 +36,6 @@ a, a:link, a:visited, a:active, a:hover {
   color: #3C3C3B;
 }
 
-/*
-    &:link {
-        text-decoration: none;
-        color: $primaryColor_2; 
-    }
-
-    &:visited {
-        text-decoration: none;
-        color: r$primaryColor_2; 
-    }
-
-    &:active {
-        text-decoration: none;
-        color: $primaryColor_2;
-    }
-
-    &:hover {
-        text-decoration: none;
-        color: $primaryColor_2; 
-    }
-    */
 .MainContent {
   overflow: hidden;
   color: #3C3C3B;
@@ -91,22 +71,26 @@ a, a:link, a:visited, a:active, a:hover {
   width: 100%;
 }
 
-.TopicBox {
+.TopicStyle {
   font-weight: bold;
+  text-align: center;
   font-size: 26px;
   padding-bottom: 21px;
 }
 
 .HeaderBox {
   font-weight: bold;
+  text-align: center;
   font-size: 16px;
 }
 
 .DescriptionBox {
+  text-align: justify;
   font-size: 15px;
 }
 
 .IconBox {
+  text-align: center;
   font-size: 40px;
 }
 
@@ -117,6 +101,56 @@ a, a:link, a:visited, a:active, a:hover {
   background-color: #3C3C3B;
   margin-top: 21px;
   width: 50vw;
+}
+
+.TopicMiddleBox {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.TopicMiddleBeam {
+  width: 15%;
+  height: 2px;
+  background-color: #3C3C3B;
+}
+
+.TopicMiddleText {
+  padding: 0 1em;
+}
+
+.TopicSideBox {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.TopicSideBeam {
+  width: 5%;
+  height: 2px;
+  background-color: #3C3C3B;
+}
+
+.TopicSideBeam :nth-child(2) {
+  width: 50%;
+}
+
+.TopicSideText {
+  padding-right: 1em;
 }
 
 @media (min-width: 769px) and (max-width: 1179px) {

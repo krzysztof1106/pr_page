@@ -21,7 +21,6 @@ const PricelistContent = (props)  => {
         <div className="MainBox">
             <div className="offset"></div>
             <TreatContextRow picture={pic_1} description={des_1}/>
-            <TreatContextRow picture={pic_1} description={des_1}/>
             <TreatContextRow picture={pic_2} description={des_2}/>
             <TreatContextRow picture={pic_3} description={des_3}/>
 

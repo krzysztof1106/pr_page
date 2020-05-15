@@ -1,10 +1,11 @@
 @import "./Variables_Style.scss";
 
 .CP_mainBox{
-    padding-top: 100px;
     margin: auto;
     box-sizing: border-box;
+    color: $primaryColor_2;
 
+    padding-top: 100px;
     max-width: 1000px;
 }
 
@@ -26,7 +27,6 @@
 
 .CP_mapBox{
     width: 100%;
-    max-width: 1000px;
 
     & img{
         width: 100%;
