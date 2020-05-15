@@ -103,7 +103,6 @@ a, a:link, a:visited, a:active, a:hover {
 
 .HeaderBox{
     font-weight: bold;
-    text-align: center;
     
     font-size: $headerFont_l;
 }
@@ -163,13 +162,10 @@ a, a:link, a:visited, a:active, a:hover {
 }
 
 .TopicSideBeam{
-    width: 5%;
+    width: 25%;
+    max-width: 250px;
     height: 2px;
     background-color: $primaryColor_2;
-
-    :nth-child(2){
-        width: 50%;
-    }
 }
 
 .TopicSideText{
