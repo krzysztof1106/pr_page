@@ -170,10 +170,8 @@
     margin-bottom: 3rem;
   }
   .nav_mainBarBox {
-    padding: 0 20px;
-  }
-  .nav_mainBarBox {
     height: 54px;
+    padding: 0 20px;
   }
   .nav_mainLinksBox {
     position: absolute;

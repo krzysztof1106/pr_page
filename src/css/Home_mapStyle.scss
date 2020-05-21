@@ -1,15 +1,16 @@
 @import "./Variables_Style.scss";
 
-.homeMap {
+.hp_mapMainBox {
+    width: 100%;
     background-image: linear-gradient($primaryColor_1 70%, $primaryColor_3 70%);
-
-    //width: 100%;
 }
 
-.homeMapBox{
-    width: 60%;
+.hp_mapContentBox{
     margin: auto;
+    object-fit: cover;
     max-width: 1500px;
+
+    width: 60%;
 
     & img{
         width: 100%;
@@ -18,14 +19,13 @@
 }
 
 @media (min-width: 769px) and (max-width: 1179px){
-    .homeMapBox{
+    .hp_mapContentBox{
         width: 80%;
     }
 }
 
 @media (max-width: 768px){
-    .homeMapBox{
-        width: 100vw;
-        margin-left: -$padding_s;
+    .hp_mapContentBox{
+        width: 100%;
     }
 }

@@ -2,7 +2,7 @@ import React from 'react';
 
 //Imports
 import Topic from "../../_Main_Components/Middle_Topic";
-import Contact from "./HP_ContactTile";
+import Contact from "./Home_ContactTile";
 import Map from "./Home_MapContent";
 
 
@@ -33,12 +33,12 @@ import Map from "./Home_MapContent";
 const HPContactContent = (props) => {
 
     return (
-        <article>
-            <div className="homeContact">
-                <div className="homeContactTopStyle"></div>
+        <article className="ContentStyle">
+            <div className="hp_contact">
+                <div className="hp_contactTopStyle"></div>
                 <Topic topic="Kontakt" />
-                <div className="MainContent">
-                    <div className="homeContactBox">
+                <div className="hp_contactMainBox">
+                    <div className="hp_contactContent">
                         <Contact icon={socialIcon} description={socialDescription} link={socialLink} name={socialName} title={socialTitle} />
                         <Contact icon={phoneIcon} description={phoneDescription} link={phoneLink} name={phoneName} title={phoneTitle} />
                         <Contact icon={locationIcon} description={locationDescription} link={locationLink} name={locationName} title={locationTitle} />

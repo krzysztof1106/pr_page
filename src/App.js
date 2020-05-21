@@ -20,13 +20,11 @@ const App = ()  => {
     <Router>
         <Navbar />
         <Switch>
-
           <Route path="/" exact component={Home_Page}/>
           <Route path="/zabiegi" component={Treatments_Page}/>
           <Route path="/cennik" component={Pricelist_Page}/>
           <Route path="/nasz-zespol" component={Team_Page}/>
           <Route path="/kontakt" component={Contact_Page}/>
-
         </Switch>
         <Footer />
     </Router>

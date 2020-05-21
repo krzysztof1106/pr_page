@@ -69,32 +69,33 @@ class HomeMobTreat extends React.Component {
     render(){
         return (
 
-            <div className="homeTreatMobileBox">
-                    <div className="homeTreatMobileRow">
-                        <div className="homeTreatMobileContentBox">
-                            <div className="homeTreatMobileStyling"></div>
-                            <div className="homeTreatMobileBtnBox">
-                                <div className="homeTreatMobileBtn" onClick={this.prevContent}>
-                                    <i className="fas fa-arrow-circle-left"></i>
-                                </div>
-                            </div>
+            <div className="hp_treatMobileBox">
 
-                            <div className="homeTreatMobilePic">
-                                <img src={this.state.image[this.state.idx]} alt="PinkRoom - Wrocław" />
-                            </div>
-
-                            <div className="homeTreatMobileBtnBox">
-                                <div className="homeTreatMobileBtn" onClick={this.nextContent}>
-                                    <i className="fas fa-arrow-circle-right"></i>
-                                </div>
-                            </div>
+                <div className="hp_treatMobileRow">
+                    <div className="hp_treatMobileStyle"></div>
+                    
+                    <div className="hp_treatMobileBtn">
+                        <div className="IconStyle" onClick={this.prevContent}>
+                            <i className="fas fa-arrow-circle-left"></i>
                         </div>
-                        <Link to = {this.state.link[this.state.idx]}>
-                            <div className="homeTreatMobileDes"> {this.state.description[this.state.idx]} </div>
-
-                            <div className="homeTreatMobileMore">Zobacz więcej...</div>
-                        </Link>
                     </div>
+
+                    <div className="hp_treatMobilePic">
+                        <img src={this.state.image[this.state.idx]} alt="PinkRoom - Wrocław" />
+                    </div>
+
+                    <div className="hp_treatMobileBtn">
+                        <div className="IconStyle" onClick={this.nextContent}>
+                            <i className="fas fa-arrow-circle-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <Link to = {this.state.link[this.state.idx]}>
+                    <div className="HeaderStyle hp_treatMobileHeader"> {this.state.description[this.state.idx]} </div>
+
+                    <div>Zobacz więcej...</div>
+                </Link>
+
             </div>
         );
     }

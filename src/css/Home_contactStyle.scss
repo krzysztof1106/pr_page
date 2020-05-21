@@ -1,73 +1,72 @@
 @import "./Variables_Style.scss";
 
-$topStyleHeight: 15vh;
 $beforeAfterUpDown: 3px;
 $beforeAfterSides: 6px;
 
-.homeContact{
+//Main containers
+.hp_contact{
     background-color: $primaryColor_1;
-    box-sizing: border-box;
-
+    width: 100%;
 }
 
+.hp_contactMainBox{
+    padding-bottom: 3em;
+}
 
-.homeContactBox{
+.hp_contactContent{
+    margin: auto;
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    max-width: 1000px;
-    margin: auto;
-    padding: $padding_l;
+    align-items: center;
 
+    padding: 1.5em;
+    max-width: 1000px;
 
     &::before {
         position: absolute;
-        width: 70%;
+        width: 60%;
         height: 60%;
         content: '';
         top: $beforeAfterUpDown; left: $beforeAfterSides;
-        border-top: 3px solid $primaryColor_2;
-        border-left: 3px solid $primaryColor_2;
+        border-top: 2px solid $primaryColor_2;
+        border-left: 2px solid $primaryColor_2;
     }
 
     &::after {
         position: absolute;
-        width: 70%;
+        width: 60%;
         height: 60%;
         content: '';
         bottom: $beforeAfterUpDown; right: $beforeAfterSides;
-        border-bottom: 3px solid $primaryColor_2;
-        border-right: 3px solid $primaryColor_2;
+        border-bottom: 2px solid $primaryColor_2;
+        border-right: 2px solid $primaryColor_2;
     }
 }
 
-.homeContactTile{
-    position: relative;
+.hp_contactTile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     z-index: 1;
     width: 300px;
 
     &:nth-child(2){
-        padding-right: 25px;
-        padding-left: 25px;
+        padding: 0 1em;
     }
 }
 
-.homeContactHeader{
-    display: flex;
-    justify-content: center;
-}
-
-.homeContactDes{
-    font-weight: 600;
+.hp_contactHeader{
+    padding: 0.75em 0;
 }
 
 
 //Style
-.homeContactTopStyle{
+.hp_contactTopStyle{
     border-right: 100vw solid $primaryColor_3;
-    border-bottom: $topStyleHeight solid $primaryColor_1;
+    border-bottom: 15vh solid $primaryColor_1;
 }
 
 
@@ -75,42 +74,27 @@ $beforeAfterSides: 6px;
 //***************************
 //Media
 @media (min-width: 769px) and (max-width: 1179px){
-    .homeContactBox{
+    .hp_contactContent{
         max-width: 665px;
-        padding: $padding_m;
     }
 
-    .homeContactTile{
+    .hp_contactTile{
         width: 210px;
-
-        &:nth-child(2){
-            padding-right: 15px;
-            padding-left: 15px;
-        }
     }
 }
 
 
 @media (max-width: 768px){
-    .homeContact{
-        padding-bottom: $padding_m;
-    }
-
-    .homeContactBox{
+    .hp_contactContent{
         flex-direction: column;
-        align-items: center;
         max-width: 200px;
-        padding: $padding_m;
     }
 
-    .homeContactTile{
+    .hp_contactTile{
         width: 200px;
 
         &:nth-child(2){
-            padding-right: 0px;
-            padding-left: 0px;
-            padding-top: 25px;
-            padding-bottom: 25px;
+            padding: 2em 0;
         }
     }
 }

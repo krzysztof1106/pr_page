@@ -1,10 +1,14 @@
-.homeContact {
+.hp_contact {
   background-color: #d4b6b8;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  width: 100%;
 }
 
-.homeContactBox {
+.hp_contactMainBox {
+  padding-bottom: 3em;
+}
+
+.hp_contactContent {
+  margin: auto;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16,100 +20,86 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5em;
   max-width: 1000px;
-  margin: auto;
-  padding: 21px;
 }
 
-.homeContactBox::before {
+.hp_contactContent::before {
   position: absolute;
-  width: 70%;
+  width: 60%;
   height: 60%;
   content: '';
   top: 3px;
   left: 6px;
-  border-top: 3px solid #3C3C3B;
-  border-left: 3px solid #3C3C3B;
+  border-top: 2px solid #3C3C3B;
+  border-left: 2px solid #3C3C3B;
 }
 
-.homeContactBox::after {
+.hp_contactContent::after {
   position: absolute;
-  width: 70%;
+  width: 60%;
   height: 60%;
   content: '';
   bottom: 3px;
   right: 6px;
-  border-bottom: 3px solid #3C3C3B;
-  border-right: 3px solid #3C3C3B;
+  border-bottom: 2px solid #3C3C3B;
+  border-right: 2px solid #3C3C3B;
 }
 
-.homeContactTile {
-  position: relative;
+.hp_contactTile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   z-index: 1;
   width: 300px;
 }
 
-.homeContactTile:nth-child(2) {
-  padding-right: 25px;
-  padding-left: 25px;
+.hp_contactTile:nth-child(2) {
+  padding: 0 1em;
 }
 
-.homeContactHeader {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.hp_contactHeader {
+  padding: 0.75em 0;
 }
 
-.homeContactDes {
-  font-weight: 600;
-}
-
-.homeContactTopStyle {
+.hp_contactTopStyle {
   border-right: 100vw solid #f2e7e3;
   border-bottom: 15vh solid #d4b6b8;
 }
 
 @media (min-width: 769px) and (max-width: 1179px) {
-  .homeContactBox {
+  .hp_contactContent {
     max-width: 665px;
-    padding: 18px;
   }
-  .homeContactTile {
+  .hp_contactTile {
     width: 210px;
-  }
-  .homeContactTile:nth-child(2) {
-    padding-right: 15px;
-    padding-left: 15px;
   }
 }
 
 @media (max-width: 768px) {
-  .homeContact {
-    padding-bottom: 18px;
-  }
-  .homeContactBox {
+  .hp_contactContent {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     max-width: 200px;
-    padding: 18px;
   }
-  .homeContactTile {
+  .hp_contactTile {
     width: 200px;
   }
-  .homeContactTile:nth-child(2) {
-    padding-right: 0px;
-    padding-left: 0px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+  .hp_contactTile:nth-child(2) {
+    padding: 2em 0;
   }
 }
 /*# sourceMappingURL=Home_contactStyle.css.map */

@@ -140,7 +140,6 @@
     }
 }
 
- //Burger animation
 .toggle .burgerLine_1{
     transform: rotate(135deg) translate(5px, -5px);
 }
@@ -166,11 +165,8 @@
     }
 
     .nav_mainBarBox{
-        padding: 0 20px;
-    }
-
-    .nav_mainBarBox{
         height: 54px;
+        padding: 0 20px;
     }
 
     .nav_mainLinksBox{

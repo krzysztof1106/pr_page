@@ -1,6 +1,9 @@
 body {
   margin: 0px;
   padding: 0px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   background-color: #f2e7e3;
   letter-spacing: 1px;
@@ -19,7 +22,6 @@ header {
 }
 
 article {
-  color: #3C3C3B;
   overflow: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -36,70 +38,36 @@ a, a:link, a:visited, a:active, a:hover {
   color: #3C3C3B;
 }
 
-.MainContent {
-  overflow: hidden;
+.ContentStyle {
+  text-align: justify;
   color: #3C3C3B;
-  padding: 21px;
-}
-
-.MainTopic {
-  font-weight: bold;
-  text-align: center;
-  font-size: 26px;
-  padding-bottom: 21px;
-}
-
-.MainHeader {
-  font-weight: bold;
-  padding: 15px;
-  font-size: 16px;
-}
-
-.MainDescription {
-  font-size: 15px;
-}
-
-.MainIcon {
-  font-size: 40px;
-}
-
-.MainBox {
-  overflow: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: #3C3C3B;
   width: 100%;
+  padding: 2em 0;
+  font-size: 15px;
 }
 
 .TopicStyle {
   font-weight: bold;
   text-align: center;
+  padding-bottom: 1.25em;
   font-size: 26px;
-  padding-bottom: 21px;
 }
 
-.HeaderBox {
+.HeaderStyle {
   font-weight: bold;
   font-size: 16px;
 }
 
-.DescriptionBox {
-  text-align: justify;
-  font-size: 15px;
-}
-
-.IconBox {
+.IconStyle {
   text-align: center;
   font-size: 40px;
 }
 
-.MainBorder {
-  margin: auto;
-  height: 2px;
-  margin-bottom: 5px;
-  background-color: #3C3C3B;
-  margin-top: 21px;
-  width: 50vw;
+.TopSpacerBox {
+  width: 100%;
+  height: 100px;
 }
 
 .TopicMiddleBox {
@@ -116,7 +84,7 @@ a, a:link, a:visited, a:active, a:hover {
 }
 
 .TopicMiddleBeam {
-  width: 15%;
+  width: 10%;
   height: 2px;
   background-color: #3C3C3B;
 }
@@ -139,85 +107,49 @@ a, a:link, a:visited, a:active, a:hover {
 }
 
 .TopicSideBeam {
-  width: 25%;
-  max-width: 250px;
+  width: 35%;
+  max-width: 350px;
   height: 2px;
   background-color: #3C3C3B;
 }
 
 .TopicSideText {
-  padding-right: 1em;
+  padding-right: 0.25em;
 }
 
 @media (min-width: 769px) and (max-width: 1179px) {
-  .MainContent {
-    padding: 18px;
-  }
-  .MainTopic {
-    font-size: 22px;
-    padding-bottom: 18px;
-  }
-  .MainHeader {
-    font-size: 14px;
-  }
-  .MainDescription {
+  .ContentStyle {
     font-size: 13px;
   }
-  .MainIcon {
-    font-size: 35px;
-  }
-  .TopicBox {
+  .TopicStyle {
     font-size: 22px;
-    padding-bottom: 18px;
   }
-  .HeaderBox {
+  .HeaderStyle {
     font-size: 14px;
   }
-  .DescriptionBox {
-    font-size: 13px;
-  }
-  .IconBox {
+  .IconStyle {
     font-size: 35px;
   }
-  .MainBorder {
-    width: 60vw;
-    margin-top: 18px;
+  .TopSpacerBox {
+    height: 85px;
   }
 }
 
 @media (max-width: 768px) {
-  .MainContent {
-    padding: 15px;
-  }
-  .MainTopic {
-    font-size: 18px;
-    padding-bottom: 15px;
-  }
-  .MainHeader {
-    font-size: 12px;
-  }
-  .MainDescription {
+  .ContentStyle {
     font-size: 11px;
   }
-  .MainIcon {
-    font-size: 30px;
-  }
-  .TopicBox {
+  .TopicStyle {
     font-size: 18px;
-    padding-bottom: 15px;
   }
-  .HeaderBox {
+  .HeaderStyle {
     font-size: 12px;
   }
-  .DescriptionBox {
-    font-size: 11px;
-  }
-  .IconBox {
+  .IconStyle {
     font-size: 30px;
   }
-  .MainBorder {
-    width: 70vw;
-    margin-top: 15px;
+  .TopSpacerBox {
+    height: 70px;
   }
 }
 /*# sourceMappingURL=Main_Style.css.map */

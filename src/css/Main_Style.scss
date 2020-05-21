@@ -6,6 +6,8 @@
 body {
     margin: 0px;
     padding: 0px;
+    width: 100%;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     background-color: $primaryColor_3;
     letter-spacing: 1px;
@@ -22,14 +24,13 @@ header{
 }
 
 article{
-    color: $primaryColor_2;
     overflow: hidden;
     box-sizing: border-box;
 }
 
 footer{
     overflow: hidden;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 
@@ -45,75 +46,31 @@ a, a:link, a:visited, a:active, a:hover {
 
 //******************************************************
 //Custom containers
-.MainContent{
-    overflow: hidden;
-    
-    //width: 100%;
-
+.ContentStyle{
+    text-align: justify;
     color: $primaryColor_2;
-    padding: $padding_l;
-}
-
-.MainTopic{
-    font-weight: bold;
-    text-align: center;
-
-    font-size: $topicFont_l;
-    padding-bottom: $padding_l;
-}
-
-.MainHeader{
-    font-weight: bold;
-    padding: $padding_s;
-
-    font-size: $headerFont_l;
-}
-
-.MainDescription{
-    font-size: $descriptionFont_l;
-}
-
-.MainIcon{
-    font-size: $iconFont_l;
-}
-
-
-
-
-.MainBox{
-    overflow: hidden;
     box-sizing: border-box;
-    color: $primaryColor_2;
     width: 100%;
+    padding: 2em 0;
+
+    font-size: $contentFont_l;
 }
-
-
-
-
-
-
 
 .TopicStyle{
     font-weight: bold;
     text-align: center;
+    padding-bottom: 1.25em;
 
     font-size: $topicFont_l;
-    padding-bottom: $padding_l;
 }
 
-.HeaderBox{
+.HeaderStyle{
     font-weight: bold;
-    
+
     font-size: $headerFont_l;
 }
 
-.DescriptionBox{
-    text-align: justify;
-
-    font-size: $descriptionFont_l;
-}
-
-.IconBox{
+.IconStyle{
     text-align: center;
 
     font-size: $iconFont_l;
@@ -122,15 +79,10 @@ a, a:link, a:visited, a:active, a:hover {
 
 
 //******************************************************
-//Custom styles
-.MainBorder{
-    margin: auto;
-    height: 2px;
-    margin-bottom: 5px;
-    background-color: $primaryColor_2;
-
-    margin-top: $padding_l;
-    width: 50vw;
+//Spacer
+.TopSpacerBox{
+    width: 100%;
+    height: 100px;
 }
 
 
@@ -145,7 +97,7 @@ a, a:link, a:visited, a:active, a:hover {
 }
 
 .TopicMiddleBeam{
-    width: 15%;
+    width: 10%;
     height: 2px;
     background-color: $primaryColor_2;
 }
@@ -162,14 +114,14 @@ a, a:link, a:visited, a:active, a:hover {
 }
 
 .TopicSideBeam{
-    width: 25%;
-    max-width: 250px;
+    width: 35%;
+    max-width: 350px;
     height: 2px;
     background-color: $primaryColor_2;
 }
 
 .TopicSideText{
-    padding-right: 1em;
+    padding-right: 0.25em;
 }
 
 
@@ -177,100 +129,48 @@ a, a:link, a:visited, a:active, a:hover {
 //******************************************************
 //Media
 @media (min-width: 769px) and (max-width: 1179px){
-
-    .MainContent{
-        padding: $padding_m;
-    }
-
-    .MainTopic{
-        font-size: $topicFont_m;
-        padding-bottom: $padding_m;
-    }
-
-    .MainHeader{
-        font-size: $headerFont_m;
-    }
-
-    .MainDescription{
-        font-size: $descriptionFont_m;
+    .ContentStyle{   
+        font-size: $contentFont_m;
     }
     
-    .MainIcon{
+    .TopicStyle{
+        font-size: $topicFont_m;
+    }
+    
+    .HeaderStyle{
+        font-size: $headerFont_m;
+    }
+    
+    .IconStyle{
         font-size: $iconFont_m;
     }
 
-
-    .TopicBox{
-        font-size: $topicFont_m;
-        padding-bottom: $padding_m;
+    //Spacer
+    .TopSpacerBox{
+        height: 85px;
     }
-
-    .HeaderBox{
-        font-size: $headerFont_m;
-    }
-
-    .DescriptionBox{
-        font-size: $descriptionFont_m;
-    }
-
-    .IconBox{
-        font-size: $iconFont_m;
-    }
-
-    //Styles
-    .MainBorder{
-        width: 60vw;
-        margin-top: $padding_m;
-    }
-    
 }
 
 
 @media (max-width: 768px){
-
-    .MainContent{
-        padding: $padding_s;
+    .ContentStyle{   
+        font-size: $contentFont_s;
     }
     
-    .MainTopic{
+    .TopicStyle{
         font-size: $topicFont_s;
-        padding-bottom: $padding_s;
     }
-
-    .MainHeader{
+    
+    .HeaderStyle{
         font-size: $headerFont_s;
     }
-
-    .MainDescription{
-        font-size: $descriptionFont_s;
-    }
     
-    .MainIcon{
+    .IconStyle{
         font-size: $iconFont_s;
     }
 
-
-    .TopicBox{
-        font-size: $topicFont_s;
-        padding-bottom: $padding_s;
+    //Spacer
+    .TopSpacerBox{
+        height: 70px;
     }
-
-    .HeaderBox{
-        font-size: $headerFont_s;
-    }
-
-    .DescriptionBox{
-        font-size: $descriptionFont_s;
-    }
-
-    .IconBox{
-        font-size: $iconFont_s;
-    }
-
-    //Styles
-    .MainBorder{
-        width: 70vw;
-        margin-top: $padding_s;
-    }
-
 }

@@ -10,8 +10,8 @@ import HomeMobTreat from "./Home_MobTreatmentsContent";
 const HomeTreatments = () => {
 
     return (
-        <article>
-            <Topic topic="Oferowane zabiegi" />
+        <article className="ContentStyle">
+            <Topic topic="Zabiegi" />
             <HomePcTreat />
             <HomeMobTreat />
         </article>

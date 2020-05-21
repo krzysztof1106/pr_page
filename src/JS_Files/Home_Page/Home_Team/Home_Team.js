@@ -4,14 +4,14 @@ import React from 'react';
 import Topic from "../../_Main_Components/Middle_Topic";
 import HomeTeamCtx from "./Home_TeamContext";
 
-const HomeTeamCtn = () => {
+const HomeTeam = () => {
 
     return(
-        <article>
+        <article className="ContentStyle">
             <Topic topic="Nasz zespół" />
             <HomeTeamCtx />
         </article>
     );
 };
 
-export default HomeTeamCtn;
+export default HomeTeam;

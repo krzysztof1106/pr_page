@@ -1,24 +1,17 @@
-.homeTreatMobileBox {
+.hp_treatMobileBox {
   display: none;
-  margin-bottom: 50px;
   position: relative;
-  color: #3C3C3B;
-}
-
-.homeTreatMobileRow {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.homeTreatMobileContentBox {
+.hp_treatMobileRow {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28,7 +21,26 @@
           align-items: center;
 }
 
-.homeTreatMobileStyling {
+.hp_treatMobilePic {
+  width: 60%;
+}
+
+.hp_treatMobilePic img {
+  width: 100%;
+  height: auto;
+}
+
+.hp_treatMobileBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20%;
+}
+
+.hp_treatMobileStyle {
   position: absolute;
   height: 50%;
   width: 100%;
@@ -37,50 +49,16 @@
   z-index: -1;
 }
 
-.homeTreatMobilePic {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 60vw;
-}
-
-.homeTreatMobilePic img {
-  width: 100%;
-}
-
-.homeTreatMobileDes {
-  font-size: 14px;
-  font-weight: bold;
+.hp_treatMobileHeader {
+  padding-top: 0.75em;
   border-bottom: 1px solid #3C3C3B;
 }
 
-.homeTreatMobileMore {
-  font-size: 11px;
-  text-align: center;
-}
-
-.homeTreatMobileBtnBox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 20vw;
-}
-
-.homeTreatMobileBtn {
-  font-size: 30px;
-}
-
 @media (max-width: 768px) {
-  .homeTreatMobileBox {
-    display: block;
+  .hp_treatMobileBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 /*# sourceMappingURL=Home_mobileTreatmentStyle.css.map */
