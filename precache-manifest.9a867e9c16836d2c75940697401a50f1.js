@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e4d14028f16cbac38d395bd5f43fab84",
+    "revision": "96798b443480c6709deea69b98da40f4",
     "url": "/pr_page/index.html"
   },
   {
-    "revision": "6c6156f3f02f04c2c6cc",
-    "url": "/pr_page/static/css/main.44f010af.chunk.css"
+    "revision": "691ee9483daee543feaf",
+    "url": "/pr_page/static/css/main.3ef0b13e.chunk.css"
   },
   {
     "revision": "45a7723ac600f7aa1118",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pr_page/static/js/2.8b52bbdb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6c6156f3f02f04c2c6cc",
-    "url": "/pr_page/static/js/main.3678ceec.chunk.js"
+    "revision": "691ee9483daee543feaf",
+    "url": "/pr_page/static/js/main.884b7dec.chunk.js"
   },
   {
     "revision": "1d518250e70f74ffcc09",
@@ -108,8 +108,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pr_page/static/media/styliacjaWlosow.a748dd73.jpg"
   },
   {
-    "revision": "4f286d942ed95f83f3f3ff38a6f0b086",
-    "url": "/pr_page/static/media/stylizacjaBrwi.4f286d94.jpg"
+    "revision": "c40666394d98ace6b62713d0a67cd410",
+    "url": "/pr_page/static/media/stylizacjaBrwi.c4066639.jpg"
   },
   {
     "revision": "c40666394d98ace6b62713d0a67cd410",
