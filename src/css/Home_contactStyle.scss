@@ -5,6 +5,7 @@ $beforeAfterSides: 6px;
 
 //Main containers
 .hp_contact{
+    position: relative;
     background-color: $primaryColor_1;
     width: 100%;
 }
@@ -62,11 +63,10 @@ $beforeAfterSides: 6px;
     padding: 0.75em 0;
 }
 
-
 //Style
 .hp_contactTopStyle{
     border-right: 100vw solid $primaryColor_3;
-    border-bottom: 15vh solid $primaryColor_1;
+    border-bottom: 10vw solid $primaryColor_1;
 }
 
 
@@ -96,5 +96,10 @@ $beforeAfterSides: 6px;
         &:nth-child(2){
             padding: 2em 0;
         }
+    }
+
+    .hp_contactTopStyle{
+        border-right: 100vw solid $primaryColor_3;
+        border-bottom: 10vh solid $primaryColor_1;
     }
 }

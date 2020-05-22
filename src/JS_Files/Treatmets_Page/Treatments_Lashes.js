@@ -2,6 +2,7 @@ import React from 'react';
 import TreatContextRow from './Treatments_ContextRow';
 
 //Picture import
+import Topic from '../_Main_Components/Side_Topic';
 import LashPic from './img/TestPic.jpg';
 
 //Content
@@ -19,8 +20,7 @@ const des_3 = "hahahahah ahaalalalal allalaj sjsjsjsj sjs jsndndn dnndnd nd ajaj
 const PricelistContent = (props)  => {
     return (
         <div className="MainBox">
-            <div className="offset"></div>
-            <TreatContextRow picture={pic_1} description={des_1}/>
+            <Topic topic="Stylizacja rzęs" />
             <TreatContextRow picture={pic_1} description={des_1}/>
             <TreatContextRow picture={pic_2} description={des_2}/>
             <TreatContextRow picture={pic_3} description={des_3}/>

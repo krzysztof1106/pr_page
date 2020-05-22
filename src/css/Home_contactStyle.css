@@ -1,4 +1,5 @@
 .hp_contact {
+  position: relative;
   background-color: #d4b6b8;
   width: 100%;
 }
@@ -75,7 +76,7 @@
 
 .hp_contactTopStyle {
   border-right: 100vw solid #f2e7e3;
-  border-bottom: 15vh solid #d4b6b8;
+  border-bottom: 10vw solid #d4b6b8;
 }
 
 @media (min-width: 769px) and (max-width: 1179px) {
@@ -100,6 +101,10 @@
   }
   .hp_contactTile:nth-child(2) {
     padding: 2em 0;
+  }
+  .hp_contactTopStyle {
+    border-right: 100vw solid #f2e7e3;
+    border-bottom: 10vh solid #d4b6b8;
   }
 }
 /*# sourceMappingURL=Home_contactStyle.css.map */

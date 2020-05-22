@@ -5,9 +5,6 @@ $CP_macWidth: 1000px;
 
 .CP_mainBox{
     margin: auto;
-    box-sizing: border-box;
-    color: $primaryColor_2;
-    
     max-width: $CP_macWidth;
 }
 
@@ -19,7 +16,7 @@ $CP_macWidth: 1000px;
 .CP_contentRow{
     display: flex;
     align-items: center;
-    padding-bottom: 15px;
+    padding-bottom: 1.5em;
 }
 
 .CP_headerBox{
@@ -32,12 +29,11 @@ $CP_macWidth: 1000px;
 
     & img{
         width: 100%;
-        height: 100%;  
     }
 }
 
 @media (max-width: $CP_macWidth){
     .CP_contentBox{
-        padding-left: 20px;
+        padding-left: 2em;
     }
 }

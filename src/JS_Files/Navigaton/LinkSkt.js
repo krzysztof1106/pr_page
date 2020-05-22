@@ -5,9 +5,11 @@ import {Link} from 'react-router-dom';
 const LinksSkt = (props) => {
 
     return (
-        <Link to={props.link}>
-            <div className="nav_linkHeader" onClick={props.navHeaderClick}>{props.header}</div>
-        </Link>
+        <div className="nav_linkHeader">
+            <Link to={props.link}>
+                <div onClick={props.navHeaderClick}>{props.header}</div>
+            </Link>
+        </div>
     );
 }
 

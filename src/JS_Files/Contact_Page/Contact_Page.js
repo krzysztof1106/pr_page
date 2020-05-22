@@ -11,7 +11,7 @@ import ContactMapPic from './img/Contact_MapPic.jpg';
 const ContactCtn = () => {
 
     return (
-        <article>
+        <article className="ContentStyle">
             <div className="CP_mainBox">
                 <div className="CP_contentBox">
                     <Topic topic = "Kontakt" />

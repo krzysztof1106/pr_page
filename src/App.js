@@ -19,6 +19,7 @@ const App = ()  => {
   return (
     <Router>
         <Navbar />
+        <div className="nav_mainBarBox"></div>
         <Switch>
           <Route path="/" exact component={Home_Page}/>
           <Route path="/zabiegi" component={Treatments_Page}/>

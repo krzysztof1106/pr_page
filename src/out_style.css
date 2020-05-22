@@ -406,6 +406,7 @@ footer {
 }
 
 .hp_contact {
+  position: relative;
   background-color: #d4b6b8;
   width: 100%;
 }
@@ -482,7 +483,7 @@ footer {
 
 .hp_contactTopStyle {
   border-right: 100vw solid #f2e7e3;
-  border-bottom: 15vh solid #d4b6b8;
+  border-bottom: 10vw solid #d4b6b8;
 }
 
 @media (min-width: 769px) and (max-width: 1179px) {
@@ -508,6 +509,10 @@ footer {
   .hp_contactTile:nth-child(2) {
     padding: 2em 0;
   }
+  .hp_contactTopStyle {
+    border-right: 100vw solid #f2e7e3;
+    border-bottom: 10vh solid #d4b6b8;
+  }
 }
 
 .hp_teamContentnBox {
@@ -528,7 +533,6 @@ footer {
      object-fit: cover;
   width: 100%;
   height: 100%;
-  right: 15%;
   z-index: 3;
 }
 
@@ -538,20 +542,19 @@ footer {
 
 .hp_teamStyle {
   position: absolute;
+  width: 125%;
+  height: 80%;
   opacity: 0.8;
-  width: 100%;
-  z-index: 2;
-  height: 90%;
+  z-index: 1;
   background-color: #1b464c;
-  top: 5%;
+  top: 10%;
 }
 
 .hp_teamStyle:nth-child(2) {
-  z-index: 1;
-  height: 80%;
+  opacity: 1;
+  z-index: 2;
   background-color: #d4b6b8;
-  top: 10%;
-  left: 15%;
+  left: -25%;
 }
 
 @media (max-width: 768px) {
@@ -833,9 +836,6 @@ footer {
 
 .CP_mainBox {
   margin: auto;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  color: #3C3C3B;
   max-width: 1000px;
 }
 
@@ -851,7 +851,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 15px;
+  padding-bottom: 1.5em;
 }
 
 .CP_headerBox {
@@ -865,18 +865,12 @@ footer {
 
 .CP_mapBox img {
   width: 100%;
-  height: 100%;
 }
 
 @media (max-width: 1000px) {
   .CP_contentBox {
-    padding-left: 20px;
+    padding-left: 2em;
   }
-}
-
-.offset {
-  width: 100%;
-  height: 100px;
 }
 
 .tp_rowBox {
@@ -904,19 +898,20 @@ footer {
           flex-direction: row-reverse;
 }
 
-.tp_picBox {
+.tp_contentBox {
+  padding: 0 2em;
   width: 40%;
   max-width: 400px;
 }
 
-.tp_picBox img {
+.tp_contentBox img {
   width: 100%;
 }
 
-.tp_descriptionBox {
+.tp_contentBox:nth-child(2) {
   width: 60%;
-  max-width: 700px;
-  text-align: center;
+  max-width: 600px;
+  padding: 2em;
 }
 
 @media (max-width: 768px) {

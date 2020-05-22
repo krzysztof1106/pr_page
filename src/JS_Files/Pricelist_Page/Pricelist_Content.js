@@ -2,6 +2,7 @@ import React from 'react';
 
 
 /* ---------- App imports ---------- */
+import Topic from "../_Main_Components/Side_Topic";
 import PlContext from './Pricelist_Context';
 
 
@@ -9,9 +10,10 @@ import PlContext from './Pricelist_Context';
 
 const PricelistContent = ()  => {
     return (
-        <div className="pl_mainBox">
+        <article className="ContentStyle">
+            <Topic topic = "Cennik" />
             <PlContext />
-        </div>
+        </article>
     );
 }
 

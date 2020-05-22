@@ -1,12 +1,12 @@
 import React from 'react';
 import LashContent from './Treatments_Lashes';
 
-const PricelistContent = ()  => {
+const LashTreatments = ()  => {
     return (
-        <div>
+        <article className="ContentStyle">
             <LashContent />
-        </div>
+        </article>
     );
 }
 
-export default PricelistContent;
+export default LashTreatments;
