@@ -65,9 +65,18 @@ a, a:link, a:visited, a:active, a:hover {
   font-size: 40px;
 }
 
-.TopSpacerBox {
+.ContentMaxWidth {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: auto;
+  max-width: 1179px;
+}
+
+.ContentBox {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
-  height: 100px;
+  padding: 0;
 }
 
 .TopicMiddleBox {
@@ -84,7 +93,7 @@ a, a:link, a:visited, a:active, a:hover {
 }
 
 .TopicMiddleBeam {
-  width: 10%;
+  width: 20%;
   height: 2px;
   background-color: #3C3C3B;
 }
@@ -114,7 +123,7 @@ a, a:link, a:visited, a:active, a:hover {
 }
 
 .TopicSideText {
-  padding-right: 0.25em;
+  padding-right: 0.5em;
 }
 
 @media (min-width: 769px) and (max-width: 1179px) {
@@ -130,8 +139,8 @@ a, a:link, a:visited, a:active, a:hover {
   .IconStyle {
     font-size: 35px;
   }
-  .TopSpacerBox {
-    height: 85px;
+  .ContentBox {
+    padding: 0 1.5em;
   }
 }
 
@@ -148,8 +157,8 @@ a, a:link, a:visited, a:active, a:hover {
   .IconStyle {
     font-size: 30px;
   }
-  .TopSpacerBox {
-    height: 70px;
+  .ContentBox {
+    padding: 0 1.5em;
   }
 }
 
@@ -544,14 +553,12 @@ footer {
   position: absolute;
   width: 125%;
   height: 80%;
-  opacity: 0.8;
   z-index: 1;
-  background-color: #1b464c;
+  background-color: rgba(27, 70, 76, 0.8);
   top: 10%;
 }
 
 .hp_teamStyle:nth-child(2) {
-  opacity: 1;
   z-index: 2;
   background-color: #d4b6b8;
   left: -25%;
@@ -646,44 +653,40 @@ footer {
 }
 
 .hp_treatPcStyle_1 {
-  opacity: 0.75;
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #1b464c;
+  background-color: rgba(27, 70, 76, 0.8);
   top: -15%;
   left: -15%;
   z-index: -1;
 }
 
 .hp_treatPcStyle_2 {
-  opacity: 0.75;
   position: absolute;
   width: 100%;
   height: 130%;
   top: -15%;
   right: -15%;
   z-index: -1;
-  background-image: repeating-linear-gradient(45deg, #1b464c, #1b464c 8px, transparent 8px, transparent 16px);
+  background-image: repeating-linear-gradient(45deg, rgba(27, 70, 76, 0.8), rgba(27, 70, 76, 0.8) 8px, transparent 8px, transparent 16px);
 }
 
 .hp_treatPcStyle_3 {
-  opacity: 0.75;
   position: absolute;
   width: 70%;
   height: 70%;
   bottom: 15%;
   left: -20%;
   z-index: -1;
-  background-image: repeating-linear-gradient(135deg, #1b464c, #1b464c 8px, transparent 8px, transparent 16px);
+  background-image: repeating-linear-gradient(135deg, rgba(27, 70, 76, 0.8), rgba(27, 70, 76, 0.8) 8px, transparent 8px, transparent 16px);
 }
 
 .hp_treatPcStyle_4 {
-  opacity: 0.75;
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #1b464c;
+  background-color: rgba(27, 70, 76, 0.8);
   bottom: -15%;
   right: -15%;
   z-index: -1;
@@ -834,16 +837,6 @@ footer {
   padding: 10px;
 }
 
-.CP_mainBox {
-  margin: auto;
-  max-width: 1000px;
-}
-
-.CP_contentBox {
-  width: 100%;
-  padding-left: 0;
-}
-
 .CP_contentRow {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -867,12 +860,6 @@ footer {
   width: 100%;
 }
 
-@media (max-width: 1000px) {
-  .CP_contentBox {
-    padding-left: 2em;
-  }
-}
-
 .tp_rowBox {
   width: 100%;
   display: -webkit-box;
@@ -891,27 +878,32 @@ footer {
 }
 
 .tp_rowBox:nth-child(odd) {
-  background-color: white;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
 
-.tp_contentBox {
-  padding: 0 2em;
-  width: 40%;
-  max-width: 400px;
+.tp_rowBgd {
+  width: 100%;
 }
 
-.tp_contentBox img {
-  width: 100%;
+.tp_rowBgd:nth-child(odd) {
+  background-color: #d4b6b8;
+}
+
+.tp_contentBox {
+  padding: 2em 0;
+  width: 40%;
 }
 
 .tp_contentBox:nth-child(2) {
   width: 60%;
-  max-width: 600px;
-  padding: 2em;
+  padding: 0 2em 2em 2em;
+}
+
+.tp_contentBox img {
+  width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -920,6 +912,9 @@ footer {
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
+  }
+  .tp_contentBox {
+    width: 60%;
   }
 }
 /*# sourceMappingURL=out_style.css.map */

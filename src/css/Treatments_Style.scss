@@ -11,24 +11,30 @@
     flex-direction: row;
 
     &:nth-child(odd){
-        background-color: white;
         flex-direction: row-reverse;
     }
 }
 
-.tp_contentBox{
-    padding: 0 2em;
-    width: 40%;
-    max-width: 400px;
+.tp_rowBgd{
+    width: 100%;
 
-    & img{
-        width: 100%;
+    &:nth-child(odd){
+        background-color: $primaryColor_1;
     }
+}
+
+.tp_contentBox{
+    padding: 2em 0;
+    width: 40%;
 
     &:nth-child(2){
         width: 60%;
-        max-width: 600px;
-        padding: 2em;
+        //max-width: 600px;
+        padding: 0 2em 2em 2em;
+    }
+    
+    & img{
+        width: 100%;
     }
 }
 
@@ -36,5 +42,9 @@
 @media (max-width: 768px){
     .tp_rowBox{
         flex-direction: column !important;
+    }
+
+    .tp_contentBox{
+        width: 60%;
     }
 }

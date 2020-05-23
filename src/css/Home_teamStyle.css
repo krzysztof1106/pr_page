@@ -27,14 +27,12 @@
   position: absolute;
   width: 125%;
   height: 80%;
-  opacity: 0.8;
   z-index: 1;
-  background-color: #1b464c;
+  background-color: rgba(27, 70, 76, 0.8);
   top: 10%;
 }
 
 .hp_teamStyle:nth-child(2) {
-  opacity: 1;
   z-index: 2;
   background-color: #d4b6b8;
   left: -25%;

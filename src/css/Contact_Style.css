@@ -1,13 +1,3 @@
-.CP_mainBox {
-  margin: auto;
-  max-width: 1000px;
-}
-
-.CP_contentBox {
-  width: 100%;
-  padding-left: 0;
-}
-
 .CP_contentRow {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29,11 +19,5 @@
 
 .CP_mapBox img {
   width: 100%;
-}
-
-@media (max-width: 1000px) {
-  .CP_contentBox {
-    padding-left: 2em;
-  }
 }
 /*# sourceMappingURL=Contact_Style.css.map */

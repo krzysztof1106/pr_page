@@ -9,7 +9,9 @@ import Topic from "../_Main_Components/Side_Topic";
 const TeamContent = ()  => {
     return (
         <article className="ContentStyle">
-            <Topic topic = "Nasz zespół" />
+            <div className="ContentBox ContentMaxWidth">
+                <Topic topic = "Nasz zespół" />
+            </div>
         </article>
     );
 }

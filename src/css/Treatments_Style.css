@@ -16,27 +16,32 @@
 }
 
 .tp_rowBox:nth-child(odd) {
-  background-color: white;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
 
-.tp_contentBox {
-  padding: 0 2em;
-  width: 40%;
-  max-width: 400px;
+.tp_rowBgd {
+  width: 100%;
 }
 
-.tp_contentBox img {
-  width: 100%;
+.tp_rowBgd:nth-child(odd) {
+  background-color: #d4b6b8;
+}
+
+.tp_contentBox {
+  padding: 2em 0;
+  width: 40%;
 }
 
 .tp_contentBox:nth-child(2) {
   width: 60%;
-  max-width: 600px;
-  padding: 2em;
+  padding: 0 2em 2em 2em;
+}
+
+.tp_contentBox img {
+  width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -45,6 +50,9 @@
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
+  }
+  .tp_contentBox {
+    width: 60%;
   }
 }
 /*# sourceMappingURL=Treatments_Style.css.map */

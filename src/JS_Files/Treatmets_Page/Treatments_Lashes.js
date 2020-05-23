@@ -19,12 +19,13 @@ const des_3 = "hahahahah ahaalalalal allalaj sjsjsjsj sjs jsndndn dnndnd nd ajaj
 
 const PricelistContent = (props)  => {
     return (
-        <div className="MainBox">
-            <Topic topic="Stylizacja rzęs" />
+        <div>
+            <div className="ContentBox ContentMaxWidth">
+                <Topic topic="Stylizacja rzęs" />
+            </div>
             <TreatContextRow picture={pic_1} description={des_1}/>
             <TreatContextRow picture={pic_2} description={des_2}/>
             <TreatContextRow picture={pic_3} description={des_3}/>
-
         </div>
     );
 }

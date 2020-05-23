@@ -12,7 +12,7 @@ const Footer = (props) => {
         const fbIkon = "fab fa-facebook-square";
 
     //Instagram
-        const instaLink = "https://instagram.com/l.lashes_wroclaw?igshid=pdib9fqq7yis";
+        const instaLink = "https://instagram.com/lashes_wroclaw?igshid=1isaxhcdpe5d1";
         const instaTitle = "Odwiedź mnie na Instagramie";
         const instaIkon = "fab fa-instagram";
 

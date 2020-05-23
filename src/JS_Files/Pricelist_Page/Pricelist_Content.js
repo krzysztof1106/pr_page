@@ -11,8 +11,10 @@ import PlContext from './Pricelist_Context';
 const PricelistContent = ()  => {
     return (
         <article className="ContentStyle">
-            <Topic topic = "Cennik" />
-            <PlContext />
+            <div className="ContentMaxWidth ContentBox">
+                <Topic topic = "Cennik" />
+                <PlContext />
+            </div>
         </article>
     );
 }

@@ -1,17 +1,5 @@
 @import "./Variables_Style.scss";
 
-$CP_macWidth: 1000px;
-
-
-.CP_mainBox{
-    margin: auto;
-    max-width: $CP_macWidth;
-}
-
-.CP_contentBox{
-    width: 100%;
-    padding-left: 0;
-}
 
 .CP_contentRow{
     display: flex;
@@ -29,11 +17,5 @@ $CP_macWidth: 1000px;
 
     & img{
         width: 100%;
-    }
-}
-
-@media (max-width: $CP_macWidth){
-    .CP_contentBox{
-        padding-left: 2em;
     }
 }
