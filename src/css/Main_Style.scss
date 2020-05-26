@@ -79,7 +79,7 @@ a, a:link, a:visited, a:active, a:hover {
 .ContentMaxWidth{
     box-sizing: border-box;
     margin: auto;
-    max-width: 1179px;
+    max-width: $MaxWidth;
 }
 
 .ContentBox{

@@ -862,6 +862,8 @@ footer {
 
 .tp_rowBox {
   width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -882,23 +884,21 @@ footer {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-}
-
-.tp_rowBgd {
-  width: 100%;
-}
-
-.tp_rowBgd:nth-child(odd) {
   background-color: #d4b6b8;
 }
 
 .tp_contentBox {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
   padding: 2em 0;
   width: 40%;
+  max-width: 471.6px;
 }
 
 .tp_contentBox:nth-child(2) {
   width: 60%;
+  max-width: 707.4px;
   padding: 0 2em 2em 2em;
 }
 

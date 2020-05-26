@@ -4,32 +4,35 @@
 
 .tp_rowBox{
     width: 100%;
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
 
     flex-direction: row;
+    //background: $primaryColor_1;
+    //background: linear-gradient(90deg, $primaryColor_1 45%, $primaryColor_3 45%);
 
     &:nth-child(odd){
         flex-direction: row-reverse;
-    }
-}
-
-.tp_rowBgd{
-    width: 100%;
-
-    &:nth-child(odd){
         background-color: $primaryColor_1;
+        //background: $primaryColor_3;
+        //background: linear-gradient(90deg, $primaryColor_3 55%, $primaryColor_1 55%);
     }
 }
+
 
 .tp_contentBox{
+    box-sizing: border-box;
+    text-align: center;
+
     padding: 2em 0;
     width: 40%;
+    max-width: $MaxWidth * 0.4;
 
     &:nth-child(2){
         width: 60%;
-        //max-width: 600px;
+        max-width: $MaxWidth * 0.6;
         padding: 0 2em 2em 2em;
     }
     
