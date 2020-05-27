@@ -1,7 +1,8 @@
 @import "./Variables_Style.scss";
 
 
-.tp_rowBox{
+
+.team_rowBox{
     width: 100%;
     box-sizing: border-box;
     overflow: hidden;
@@ -11,55 +12,35 @@
 
     flex-direction: row;
 
-    background: transparent;
-    background: linear-gradient(90deg, transparent 50%, $primaryColor_1 50%);
-
-    /*
-    clip-path: 
-    polygon(
-      0% 5%,     //top left
-      5% 0%,     //top left
-      95% 0%,    //top right
-      100% 5%,   //top right
-      100% 95%,  //bottom right
-      95% 100%,  //bottom right
-      5% 100%,   //bottom left
-      0 95%      //bottom left
-    );
-    */
-
     &:nth-child(odd){
         flex-direction: row-reverse;
-        //background: $primaryColor_1;
-        //background: linear-gradient(90deg, $primaryColor_1 50%, $primaryColor_5 50%);
         background: $primaryColor_1;
-        background: linear-gradient(90deg, $primaryColor_1 50%, transparent 50%);
+        background: linear-gradient(90deg, $primaryColor_1 50%, $primaryColor_5 50%);
     }
 }
 
 
-.tp_contentBox{
-    box-sizing: border-box;
+.team_contentBox{
     position: relative;
+    box-sizing: border-box;
+
     padding: 2em;
     width: 50%;
     max-width: $MaxWidth * 0.5;
 
-    /*
     &:nth-child(2){
         padding: 2em;
     }
-    */
     
     & img{
         width: 100%;
     }
 }
 
-.tp_styleBox{
+.team_styleBox{
     display: none;
     position: absolute;
-    background-color: $primaryColor_1;
+    background-color: $primaryColor_5;
     z-index: -1;
     height: 50%;
     width: 150%;
@@ -67,17 +48,17 @@
     left: -25%;
 }
 
+
 @media (max-width: 768px){
-    .tp_rowBox{
+    .team_rowBox{
         flex-direction: column !important;
-        background: transparent;
 
         &:nth-child(odd){
             background: $primaryColor_1 !important;
         }
     }
 
-    .tp_contentBox{
+    .team_contentBox{
         width: 80% !important;
         padding: 2em 0 0 0 !important;
 
@@ -86,7 +67,7 @@
         }
     }
 
-    .tp_styleBox{
+    .team_styleBox{
         display: block;
     }
 }

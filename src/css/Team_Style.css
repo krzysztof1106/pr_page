@@ -1,4 +1,4 @@
-.tp_rowBox {
+.team_rowBox {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -16,56 +16,39 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background: transparent;
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), color-stop(50%, #d4b6b8));
-  background: linear-gradient(90deg, transparent 50%, #d4b6b8 50%);
-  /*
-    clip-path: 
-    polygon(
-      0% 5%,     //top left
-      5% 0%,     //top left
-      95% 0%,    //top right
-      100% 5%,   //top right
-      100% 95%,  //bottom right
-      95% 100%,  //bottom right
-      5% 100%,   //bottom left
-      0 95%      //bottom left
-    );
-    */
 }
 
-.tp_rowBox:nth-child(odd) {
+.team_rowBox:nth-child(odd) {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
   background: #d4b6b8;
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #d4b6b8), color-stop(50%, transparent));
-  background: linear-gradient(90deg, #d4b6b8 50%, transparent 50%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #d4b6b8), color-stop(50%, rgba(27, 70, 76, 0.8)));
+  background: linear-gradient(90deg, #d4b6b8 50%, rgba(27, 70, 76, 0.8) 50%);
 }
 
-.tp_contentBox {
+.team_contentBox {
+  position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  position: relative;
   padding: 2em;
   width: 50%;
   max-width: 589.5px;
-  /*
-    &:nth-child(2){
-        padding: 2em;
-    }
-    */
 }
 
-.tp_contentBox img {
+.team_contentBox:nth-child(2) {
+  padding: 2em;
+}
+
+.team_contentBox img {
   width: 100%;
 }
 
-.tp_styleBox {
+.team_styleBox {
   display: none;
   position: absolute;
-  background-color: #d4b6b8;
+  background-color: rgba(27, 70, 76, 0.8);
   z-index: -1;
   height: 50%;
   width: 150%;
@@ -74,25 +57,24 @@
 }
 
 @media (max-width: 768px) {
-  .tp_rowBox {
+  .team_rowBox {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
-    background: transparent;
   }
-  .tp_rowBox:nth-child(odd) {
+  .team_rowBox:nth-child(odd) {
     background: #d4b6b8 !important;
   }
-  .tp_contentBox {
+  .team_contentBox {
     width: 80% !important;
     padding: 2em 0 0 0 !important;
   }
-  .tp_contentBox:nth-child(2) {
+  .team_contentBox:nth-child(2) {
     padding: 0.75em 0 2em 0 !important;
   }
-  .tp_styleBox {
+  .team_styleBox {
     display: block;
   }
 }
-/*# sourceMappingURL=Treatments_Style.css.map */
+/*# sourceMappingURL=Team_Style.css.map */

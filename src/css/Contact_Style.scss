@@ -1,18 +1,25 @@
 @import "./Variables_Style.scss";
 
-
-.CP_contentRow{
-    display: flex;
-    align-items: center;
-    padding-bottom: 1.5em;
+.cp_contentBox{
+    padding: 1.5em 0;
 }
 
-.CP_headerBox{
+.cp_contentRow{
+    display: flex;
+    align-items: center;
+    padding-bottom: 1em;
+
+    &:last-child{
+        padding: 0;
+    }
+}
+
+.cp_headerBox{
     width: 35%;
     max-width: 150px;
 }
 
-.CP_mapBox{
+.cp_mapBox{
     width: 100%;
 
     & img{

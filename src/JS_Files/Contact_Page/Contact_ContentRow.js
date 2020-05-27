@@ -1,11 +1,11 @@
 import React from 'react';
 
 
-const ContactCtx = (props) => {
+const ContactRow = (props) => {
 
     return (
-        <div className="CP_contentRow">
-            <div className="HeaderStyle CP_headerBox">{props.header}</div>
+        <div className="cp_contentRow">
+            <div className="HeaderStyle cp_headerBox">{props.header}</div>
                 <a href={props.link} target="_blank" rel="noopener noreferrer" title={props.title}>
                     <div>
                         {props.description}
@@ -15,4 +15,4 @@ const ContactCtx = (props) => {
     );
 } 
 
-export default ContactCtx;
+export default ContactRow;

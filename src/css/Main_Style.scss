@@ -59,7 +59,7 @@ a, a:link, a:visited, a:active, a:hover {
 .TopicStyle{
     font-weight: bold;
     text-align: center;
-    padding-bottom: 1.25em;
+    //padding-bottom: 1.25em;
 
     font-size: $topicFont_l;
 }
@@ -94,6 +94,7 @@ a, a:link, a:visited, a:active, a:hover {
 //Topic components
 .TopicMiddleBox{
     width: 100%;
+    padding: 1.25em 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -149,7 +150,7 @@ a, a:link, a:visited, a:active, a:hover {
     }
 
     .ContentBox{
-        padding: 0 1.5em;
+        padding: 0 2em;
     }
 }
 
@@ -172,6 +173,6 @@ a, a:link, a:visited, a:active, a:hover {
     }
 
     .ContentBox{
-        padding: 0 1.5em;
+        padding: 0 2em;
     }
 }
