@@ -18,7 +18,9 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+    margin: auto;
     padding-bottom: 1em;
+    max-width: 500px;
 }
 
 .price_header{
@@ -41,18 +43,18 @@
 
 .price_tagContent{
     width: 50%;
-    text-align: right;
     font-size: 0.9em;
-    padding: 0 0.5em 1em 0;
+
+    text-align: right;
+    padding: 0.5em 0.5em 0.5em 0;
     border-right: 1px solid $primaryColor_2;
 
     &:nth-child(2){
         text-align: left;
-        padding: 0 0 1em 0.5em;
+        padding: 0.5em 0 0.5em 0.5em;
         border: none;
     }
 }
-
 
 
 @media (max-width: 768px){
