@@ -170,6 +170,7 @@ a, a:link, a:visited, a:active, a:hover {
   }
   .TopicMiddleBox {
     width: 100%;
+    max-width: 500px;
     padding-left: 1em;
     padding-right: 1em;
   }

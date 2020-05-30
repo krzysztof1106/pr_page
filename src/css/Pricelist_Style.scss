@@ -19,18 +19,26 @@
     justify-content: center;
     align-items: center;
     margin: auto;
-    padding-bottom: 1em;
     max-width: 500px;
+    //V1
+    //padding-bottom: 1em;
 }
 
 .price_header{
-    padding: 0 1em;
+    //V1
+    //padding: 0 1em;
+
+    //V2
+    padding: 0.25em 3em;
+    margin-bottom: 0.5em;
+    border: 1px solid $primaryColor_2;
+
 }
 
 .price_headerBar{
     height: 1px;
     flex: 1;
-    background-color: $primaryColor_2;
+    //background-color: $primaryColor_2;
 }
 
 

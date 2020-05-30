@@ -21,12 +21,13 @@
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
-  padding-bottom: 1em;
   max-width: 500px;
 }
 
 .price_header {
-  padding: 0 1em;
+  padding: 0.25em 3em;
+  margin-bottom: 0.5em;
+  border: 1px solid #3C3C3B;
 }
 
 .price_headerBar {
@@ -34,7 +35,6 @@
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  background-color: #3C3C3B;
 }
 
 .price_tagRow {
