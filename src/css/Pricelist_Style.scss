@@ -11,7 +11,9 @@
     padding: 1.5em;
 }
 
-.price_row{
+
+//Header
+.price_headerBox{
     display: flex;
     text-align: center;
     justify-content: center;
@@ -19,9 +21,7 @@
     padding-bottom: 1em;
 }
 
-
-//Header
-.price_headerBox{
+.price_header{
     padding: 0 1em;
 }
 
@@ -32,25 +32,26 @@
 }
 
 
-//Tag
+//Price
 .price_tagRow{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .price_tagContent{
-    max-width: 60%;
-    text-align: left;
+    width: 50%;
+    text-align: right;
     font-size: 0.9em;
-    padding: 0 1em;
+    padding: 0 0.5em 1em 0;
+    border-right: 1px solid $primaryColor_2;
+
+    &:nth-child(2){
+        text-align: left;
+        padding: 0 0 1em 0.5em;
+        border: none;
+    }
 }
-
-.price_tagBar{
-    flex: 1;
-    height: 0.5em;
-    border-bottom: 2px dotted $primaryColor_2;
-}
-
-
 
 
 
