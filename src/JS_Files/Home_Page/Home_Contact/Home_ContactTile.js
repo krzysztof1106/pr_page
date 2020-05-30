@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const HPContactTile = (props) => {
+const HomeContactTile = (props) => {
 
     return (
 
@@ -16,4 +16,4 @@ const HPContactTile = (props) => {
     );
 }
 
-export default HPContactTile;
+export default HomeContactTile;

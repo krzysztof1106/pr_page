@@ -3,7 +3,7 @@ import React from 'react';
 //All imports
 import mapPic from './img/MAPA.jpg';
 
-const HomeMapContext = () => {
+const HomeMap = () => {
 
     return (
         <div className="hp_mapMainBox">
@@ -15,4 +15,4 @@ const HomeMapContext = () => {
     );
 }
 
-export default HomeMapContext;
+export default HomeMap;

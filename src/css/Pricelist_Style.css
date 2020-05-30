@@ -1,52 +1,68 @@
-.pl_mainBox {
-  margin-top: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 100%;
+.price_mainBox {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
 }
 
-.pl_headerStylingLine {
-  height: 2px;
-  width: 100%;
-  background-color: #3C3C3B;
+.price_contentBox {
+  padding: 1.5em;
 }
 
-.pl_listContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 80%;
-}
-
-.pl_headerContainer {
+.price_row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 1em;
 }
 
-.pl_listHeader {
-  font-size: 16px;
-  padding: 10px;
+.price_headerBox {
+  padding: 0 1em;
+}
+
+.price_headerBar {
+  height: 1px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #3C3C3B;
+}
+
+.price_tagRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.price_tagContent {
+  max-width: 60%;
+  text-align: left;
+  font-size: 0.9em;
+  padding: 0 1em;
+}
+
+.price_tagBar {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 0.5em;
+  border-bottom: 2px dotted #3C3C3B;
+}
+
+@media (max-width: 768px) {
+  .price_mainBox {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .price_contentBox {
+    padding: 1.5em 0;
+  }
 }
 /*# sourceMappingURL=Pricelist_Style.css.map */

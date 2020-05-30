@@ -45,7 +45,7 @@ a, a:link, a:visited, a:active, a:hover {
           box-sizing: border-box;
   width: 100%;
   padding: 2em 0;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .TopicStyle {
@@ -56,7 +56,7 @@ a, a:link, a:visited, a:active, a:hover {
 
 .HeaderStyle {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .IconStyle {
@@ -79,8 +79,11 @@ a, a:link, a:visited, a:active, a:hover {
 }
 
 .TopicMiddleBox {
-  width: 100%;
+  width: 50%;
   padding: 1.25em 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,7 +96,9 @@ a, a:link, a:visited, a:active, a:hover {
 }
 
 .TopicMiddleBeam {
-  width: 20%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   height: 2px;
   background-color: #3C3C3B;
 }
@@ -103,10 +108,12 @@ a, a:link, a:visited, a:active, a:hover {
 }
 
 .TopicSideBox {
-  width: 100%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -116,8 +123,9 @@ a, a:link, a:visited, a:active, a:hover {
 }
 
 .TopicSideBeam {
-  width: 35%;
-  max-width: 350px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   height: 2px;
   background-color: #3C3C3B;
 }
@@ -134,7 +142,7 @@ a, a:link, a:visited, a:active, a:hover {
     font-size: 22px;
   }
   .HeaderStyle {
-    font-size: 14px;
+    font-size: 16px;
   }
   .IconStyle {
     font-size: 35px;
@@ -146,19 +154,27 @@ a, a:link, a:visited, a:active, a:hover {
 
 @media (max-width: 768px) {
   .ContentStyle {
-    font-size: 11px;
+    font-size: 12px;
   }
   .TopicStyle {
     font-size: 18px;
   }
   .HeaderStyle {
-    font-size: 12px;
+    font-size: 15px;
   }
   .IconStyle {
     font-size: 30px;
   }
   .ContentBox {
-    padding: 0 2em;
+    padding: 0 1em;
+  }
+  .TopicMiddleBox {
+    width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .TopicSideBox {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=Main_Style.css.map */

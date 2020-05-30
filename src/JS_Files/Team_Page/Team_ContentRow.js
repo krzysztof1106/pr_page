@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const TreatContext = (props)  => {
+const TeamRow = (props)  => {
     return (
         <div className="team_rowBox">
             <div className="team_contentBox">
@@ -12,7 +12,7 @@ const TreatContext = (props)  => {
                 <div className="HeaderStyle">
                     {props.member}
                 </div>
-                <div>
+                <div className="team_skillsBox">
                     {props.skills}
                 </div>
                 <div>
@@ -23,4 +23,4 @@ const TreatContext = (props)  => {
     );
 }
 
-export default TreatContext;
+export default TeamRow;

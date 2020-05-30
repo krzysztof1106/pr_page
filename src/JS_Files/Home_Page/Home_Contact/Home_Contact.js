@@ -30,7 +30,7 @@ import Map from "./Home_MapContent";
     const locationTitle = "Lokalizacja salonu";
 
 
-const HPContactContent = (props) => {
+const HomeContact = (props) => {
 
     return (
         <article className="ContentStyle">
@@ -50,6 +50,4 @@ const HPContactContent = (props) => {
     );
 }
 
-export default HPContactContent;
-
-//<div className="hp_contactTopStyle"></div>
+export default HomeContact;

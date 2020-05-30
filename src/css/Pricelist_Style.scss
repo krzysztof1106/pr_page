@@ -1,41 +1,65 @@
 @import "./Variables_Style.scss";
 
 
-
-.pl_mainBox{
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-
-
-    width: 100%;
+//Main box
+.price_mainBox{
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
-.pl_headerStylingLine{
-    height: 2px;
-    width: 100%;
+.price_contentBox{
+    padding: 1.5em;
+}
+
+.price_row{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1em;
+}
+
+
+//Header
+.price_headerBox{
+    padding: 0 1em;
+}
+
+.price_headerBar{
+    height: 1px;
+    flex: 1;
     background-color: $primaryColor_2;
 }
 
 
-.pl_listContainer{
+//Tag
+.price_tagRow{
     display: flex;
-    width: 80%;
 }
 
-.pl_headerContainer{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-
-    width: 100%;
+.price_tagContent{
+    max-width: 60%;
+    text-align: left;
+    font-size: 0.9em;
+    padding: 0 1em;
 }
 
-.pl_listHeader{
-    font-size: $headerFont_l;
-    padding: 10px;
+.price_tagBar{
+    flex: 1;
+    height: 0.5em;
+    border-bottom: 2px dotted $primaryColor_2;
+}
+
+
+
+
+
+@media (max-width: 768px){
+    .price_mainBox{
+        grid-template-columns: auto;
+    }
+
+    .price_contentBox{
+        padding: 1.5em 0;
+    }
 }

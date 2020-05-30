@@ -27,15 +27,18 @@
     padding: 2em;
     width: 50%;
     max-width: $MaxWidth * 0.5;
-
-    &:nth-child(2){
-        padding: 2em;
-    }
     
     & img{
         width: 100%;
     }
 }
+
+
+.team_skillsBox{
+    padding: 0.5em 0;
+    font-weight: bold;
+}
+
 
 .team_styleBox{
     display: none;
@@ -63,7 +66,7 @@
         padding: 2em 0 0 0 !important;
 
         &:nth-child(2){
-            padding: 0.75em 0 2em 0 !important;
+            padding: 0.75em 0 5em 0 !important;
         }
     }
 

@@ -7,7 +7,7 @@ import HomeTeam from "./Home_Team/Home_Team";
 import HomeContact from "./Home_Contact/Home_Contact";
 
 
-const HomeContent = (props) => {
+const HomePage = (props) => {
 
     return (
         <div>
@@ -19,4 +19,4 @@ const HomeContent = (props) => {
     );
 }
 
-export default HomeContent;
+export default HomePage;

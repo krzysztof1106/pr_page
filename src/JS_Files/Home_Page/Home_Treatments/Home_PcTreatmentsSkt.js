@@ -3,7 +3,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 
-const HomePcTreatSkt = (props) => {
+const HomePcTreatRow = (props) => {
     
     return (
 
@@ -26,4 +26,4 @@ const HomePcTreatSkt = (props) => {
     );
 }
 
-export default HomePcTreatSkt;
+export default HomePcTreatRow;

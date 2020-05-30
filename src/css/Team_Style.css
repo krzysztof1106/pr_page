@@ -37,12 +37,13 @@
   max-width: 589.5px;
 }
 
-.team_contentBox:nth-child(2) {
-  padding: 2em;
-}
-
 .team_contentBox img {
   width: 100%;
+}
+
+.team_skillsBox {
+  padding: 0.5em 0;
+  font-weight: bold;
 }
 
 .team_styleBox {
@@ -71,7 +72,7 @@
     padding: 2em 0 0 0 !important;
   }
   .team_contentBox:nth-child(2) {
-    padding: 0.75em 0 2em 0 !important;
+    padding: 0.75em 0 5em 0 !important;
   }
   .team_styleBox {
     display: block;
