@@ -19,7 +19,6 @@
     }
 }
 
-
 .team_contentBox{
     position: relative;
     box-sizing: border-box;
@@ -33,12 +32,10 @@
     }
 }
 
-
 .team_skillsBox{
     padding: 0.5em 0;
     font-weight: bold;
 }
-
 
 .team_styleBox{
     display: none;
@@ -63,6 +60,7 @@
 
     .team_contentBox{
         width: 80% !important;
+        max-width: 450px !important;
         padding: 2em 0 0 0 !important;
 
         &:nth-child(2){

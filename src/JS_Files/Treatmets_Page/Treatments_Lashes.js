@@ -1,5 +1,6 @@
 import React from 'react';
-import TreatContextRow from './Treatments_ContentRow';
+import TreatmentRow from './Treatments_ContentRow';
+import Links from './Treatments_LinksRow'
 
 //Picture import
 import Topic from '../_Main_Components/Side_Topic';
@@ -26,10 +27,11 @@ const LashContent = (props)  => {
             <div className="ContentBox ContentMaxWidth">
                 <Topic topic="Stylizacja rzęs" />
             </div>
-            <TreatContextRow picture={pic_1} header={hed_1} description={des_1}/>
-            <TreatContextRow picture={pic_2} header={hed_2} description={des_2}/>
-            <TreatContextRow picture={pic_3} header={hed_3} description={des_3}/>
-            <TreatContextRow picture={pic_3} header={hed_3} description={des_3}/>
+            <TreatmentRow picture={pic_1} header={hed_1} description={des_1}/>
+            <TreatmentRow picture={pic_2} header={hed_2} description={des_2}/>
+            <TreatmentRow picture={pic_3} header={hed_3} description={des_3}/>
+            <TreatmentRow picture={pic_3} header={hed_3} description={des_3}/>
+            <Links />
         </div>
     );
 }

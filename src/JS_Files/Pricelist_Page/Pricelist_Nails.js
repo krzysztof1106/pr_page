@@ -36,10 +36,10 @@ const PricelistNails = (props)  => {
             <Header header={lashes} />
             <Tag name={name} price={price} time={time} fontWeight={fontWeight}/>
             <Tag name={name_1} price={price_1} time={time_1} />
-            <Tag name={name_2} price={price_2} />
-            <Tag name={name_3} price={price_3} />
-            <Tag name={name_4} price={price_4} />
-            <Tag name={name_5} price={price_5} />
+            <Tag name={name_2} price={price_2} time={time_1} />
+            <Tag name={name_3} price={price_3} time={time_1} />
+            <Tag name={name_4} price={price_4} time={time_1} />
+            <Tag name={name_5} price={price_5} time={time_1} />
         </div>
     );
 }

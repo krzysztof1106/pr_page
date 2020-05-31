@@ -1,6 +1,7 @@
 @import "./Variables_Style.scss";
 
 
+//Main box
 .tp_rowBox{
     width: 100%;
     box-sizing: border-box;
@@ -10,8 +11,12 @@
     justify-content: center;
 
     flex-direction: row;
+    //V1
     background: transparent;
     background: linear-gradient(90deg, transparent 50%, $primaryColor_1 50%);
+    //V2
+    //background: $primaryColor_1;
+    //background: linear-gradient(90deg, $primaryColor_1 50%, transparent 50%);
 
     /*
     clip-path: 
@@ -31,11 +36,14 @@
         flex-direction: row-reverse;
         //background: $primaryColor_1;
         //background: linear-gradient(90deg, $primaryColor_1 50%, $primaryColor_5 50%);
+        //V1
         background: $primaryColor_1;
         background: linear-gradient(90deg, $primaryColor_1 50%, transparent 50%);
+        //V2
+        //background: transparent;
+        //background: linear-gradient(90deg, transparent 50%, $primaryColor_1 50%);
     }
 }
-
 
 .tp_contentBox{
     box-sizing: border-box;
@@ -51,13 +59,36 @@
 
 .tp_styleBox{
     display: none;
+    box-sizing: border-box;
     position: absolute;
-    background-color: $primaryColor_5;
+    //background-color: $primaryColor_1;
+    border: 7px solid $primaryColor_5;
     z-index: -1;
-    height: 50%;
-    width: 150%;
-    top: 25%;
-    left: -25%;
+    height: 60%;
+    width: 115%;
+    top: 20%;
+    left: -7.5%;
+}
+
+//Links row
+.tp_linkContent{
+    width: 100%;
+    padding: 2em 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.tp_linkBox{
+    width: auto;
+    padding: 0 1em;
+    border-right: 1px solid $primaryColor_2;
+    border-bottom: none;
+
+    &:last-child{
+        border: none;
+    }
 }
 
 @media (max-width: 768px){
@@ -72,6 +103,7 @@
 
     .tp_contentBox{
         width: 80% !important;
+        max-width: 450px !important;
         padding: 2em 0 0 0 !important;
 
         &:nth-child(2){
@@ -82,4 +114,24 @@
     .tp_styleBox{
         display: block;
     }
+
+    //Links
+    .tp_linkContent{
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    .tp_linkBox{
+        width: 70%;
+        max-width: 250px;
+        padding: 1em 0;
+        border-right: none;
+        border-bottom: 1px solid $primaryColor_2;
+    
+        &:last-child{
+            border: none;
+            padding-bottom: 0;
+        }
+    }
+
 }
