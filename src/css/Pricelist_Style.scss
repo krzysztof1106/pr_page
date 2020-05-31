@@ -21,24 +21,25 @@
     margin: auto;
     max-width: 500px;
     //V1
-    //padding-bottom: 1em;
+    padding-bottom: 1em;
 }
 
 .price_header{
     //V1
-    //padding: 0 1em;
+    padding: 0 1em;
 
     //V2
-    padding: 0.25em 3em;
-    margin-bottom: 0.5em;
-    border: 1px solid $primaryColor_2;
+    //padding: 0.25em 3em;
+    //margin-bottom: 0.5em;
+    //border: 1px solid $primaryColor_2;
 
 }
 
 .price_headerBar{
     height: 1px;
     flex: 1;
-    //background-color: $primaryColor_2;
+    //V1
+    background-color: $primaryColor_2;
 }
 
 
@@ -58,12 +59,13 @@
     border-right: 1px solid $primaryColor_2;
 
     &:nth-child(2){
+        display: grid;
+        grid-template-columns: 35% 65%;
         text-align: left;
         padding: 0.5em 0 0.5em 0.5em;
         border: none;
     }
 }
-
 
 @media (max-width: 768px){
     .price_mainBox{

@@ -16,8 +16,8 @@ const Pricelist = (props)  => {
                 <Topic topic = "Cennik" />
                 <div className="price_mainBox">
                     <Lashes />
-                    <Eyebrow />
                     <Nails />
+                    <Eyebrow />
                 </div>
             </div>
         </article>

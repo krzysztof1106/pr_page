@@ -919,12 +919,11 @@ footer {
           align-items: center;
   margin: auto;
   max-width: 500px;
+  padding-bottom: 1em;
 }
 
 .price_header {
-  padding: 0.25em 3em;
-  margin-bottom: 0.5em;
-  border: 1px solid #3C3C3B;
+  padding: 0 1em;
 }
 
 .price_headerBar {
@@ -932,6 +931,7 @@ footer {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  background-color: #3C3C3B;
 }
 
 .price_tagRow {
@@ -955,6 +955,10 @@ footer {
 }
 
 .price_tagContent:nth-child(2) {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 35% 65%;
+      grid-template-columns: 35% 65%;
   text-align: left;
   padding: 0.5em 0 0.5em 0.5em;
   border: none;
