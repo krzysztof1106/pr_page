@@ -1,7 +1,8 @@
 @import "./Variables_Style.scss";
 
 
-.homeStartPic{
+.hp_startPic{
+    position: relative;
     height: 100vh;
     opacity: 0.5;
 
@@ -10,4 +11,25 @@
         height: 100%;
         object-fit: cover;
     }
+}
+
+.hp_frontPicArrow{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    color: $primaryColor_4;
+    font-size: 2.5em;
+
+    animation-name: jumpingArrow;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2.5s;
+    animation-delay: 2s;
+}
+
+@keyframes jumpingArrow {
+    0%      {bottom: 0%;}
+    20%     {bottom: 5%;}
+    40%     {bottom: 0%;}
+    100%    {bottom: 0%;}
 }

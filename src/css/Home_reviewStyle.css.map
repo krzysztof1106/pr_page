@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,cAAc,CAAA;EAEV,gBAAgB,ECEH,OAAO;CDDvB;;AAED,AAAA,eAAe,CAAA;EACX,WAAW,EAAE,KAAK,CAAC,KAAK,CCLX,OAAO;EDMpB,aAAa,EAAE,IAAI,CAAC,KAAK,CCHZ,OAAO;CDIvB;;AACD,AAAA,eAAe,CAAA;EACX,YAAY,EAAE,KAAK,CAAC,KAAK,CCNZ,OAAO;EDOpB,aAAa,EAAE,IAAI,CAAC,KAAK,CCZZ,OAAO;CDavB",
+    "sources": [
+        "Home_reviewStyle.scss",
+        "Variables_Style.scss"
+    ],
+    "names": [],
+    "file": "Home_reviewStyle.css"
+}

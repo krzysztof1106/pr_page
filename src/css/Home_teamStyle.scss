@@ -24,7 +24,6 @@
     }
 }
 
-
 .hp_teamStyle{
     position: absolute;
     width: 125%;
@@ -33,7 +32,6 @@
     z-index: 1;
     background-color: $primaryColor_5;
     top: 10%;
-
 
     &:nth-child(2){
         z-index: 2;

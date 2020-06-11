@@ -7,17 +7,16 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  padding: 15px !important;
-  background-color: #f2e7e3;
+  padding: 0.75em 0 !important;
   color: #3C3C3B;
 }
 
 .footerCoppyrightBox {
-  width: 270px;
+  width: 280px;
   margin: auto;
   border-bottom: 1px solid #3C3C3B;
   font-size: 11px;
-  padding-bottom: 5px;
+  padding-bottom: 8px;
   font-weight: 600;
 }
 
@@ -31,12 +30,27 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 5px;
+  padding-top: 8px;
 }
 
 .footerSocialMediaIcon {
   font-size: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 1em;
+}
+
+.footer_linkRow {
+  width: 300px;
+  margin: auto;
+  font-size: 12px;
+  font-weight: bold;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  padding: 2em 0;
+}
+
+.footer_linkBox:first-child {
+  border-right: 1px solid #3C3C3B;
 }
 /*# sourceMappingURL=Footer_Style.css.map */

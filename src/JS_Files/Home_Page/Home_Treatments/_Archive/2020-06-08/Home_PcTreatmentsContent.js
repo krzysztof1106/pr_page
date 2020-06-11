@@ -1,7 +1,7 @@
 import React from 'react';
 
 //Import
-import PCTreatRow from "./Home_PcTreatmentsSkt";
+import PCTreatRow from "../../Home_PcTreatmentsRow";
 
 import lashPic from './img/stylizacjaRzes.jpg';
 import eyebrowPic from './img/stylizacjaBrwi.jpg';

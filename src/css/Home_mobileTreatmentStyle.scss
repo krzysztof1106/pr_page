@@ -5,19 +5,23 @@
 //Main boxes
 .hp_treatMobileBox{
     display: none;
-    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.hp_treatMobTile{
+    display: flex;
     align-items: center;
     text-align: center;
     flex-direction: column;
 }
-
-
 
 //Content boxes
 .hp_treatMobileRow{
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .hp_treatMobilePic{
@@ -38,7 +42,7 @@
 .hp_treatMobileStyle{
     position: absolute;
     height: 50%;
-    width: 100%;
+    width: 300%;
     top: 25%;
     background-color: $primaryColor_1;
 
@@ -50,12 +54,10 @@
     border-bottom: 1px solid $primaryColor_2;
 }
 
-
-
 //***************************
 //Media
 @media (max-width: 768px){
     .hp_treatMobileBox{
-        display: flex;
+        display: block;
     }
 }

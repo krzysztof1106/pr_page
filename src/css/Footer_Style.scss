@@ -4,18 +4,17 @@ footer {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 15px !important;
-    background-color: $primaryColor_3;
+    padding: 0.75em 0 !important;
     color: $primaryColor_2;
 
 }
 
 .footerCoppyrightBox {
-    width: 270px;
+    width: 280px;
     margin: auto;
     border-bottom: 1px solid $primaryColor_2;
     font-size: 11px;
-    padding-bottom: 5px;
+    padding-bottom: 8px;
     font-weight: 600;
 }
 
@@ -23,11 +22,28 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 5px;
+    padding-top: 8px;
 }
 
 .footerSocialMediaIcon{
     font-size: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 1em;
+}
+
+//Hyperinks
+.footer_linkRow{
+    width: 300px;
+    margin: auto;
+    font-size: 12px;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 2em 0;
+}
+
+.footer_linkBox{
+
+    &:first-child{
+        border-right: 1px solid $primaryColor_2;
+    }
 }

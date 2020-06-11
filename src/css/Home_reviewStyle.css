@@ -1,0 +1,14 @@
+.hp_revMainBox {
+  background-color: #358C97;
+}
+
+.hp_revTopStyle {
+  border-left: 100vw solid #f2e7e3;
+  border-bottom: 10vw solid #358C97;
+}
+
+.hp_revBotStyle {
+  border-right: 100vw solid #358C97;
+  border-bottom: 10vw solid #d4b6b8;
+}
+/*# sourceMappingURL=Home_reviewStyle.css.map */

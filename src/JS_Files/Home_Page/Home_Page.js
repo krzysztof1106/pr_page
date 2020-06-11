@@ -4,6 +4,7 @@ import React from 'react';
 import HomeFrontPic from "./Home_FrontPic/Home_FrontPic";
 import HomeTreatments from "./Home_Treatments/Home_Treatment";
 import HomeTeam from "./Home_Team/Home_Team";
+import HomeReview from "./Home_Review/Home_Review";
 import HomeContact from "./Home_Contact/Home_Contact";
 
 
@@ -14,6 +15,7 @@ const HomePage = (props) => {
             <HomeFrontPic/>
             <HomeTreatments />
             <HomeTeam />
+            <HomeReview />
             <HomeContact />
         </div>
     );

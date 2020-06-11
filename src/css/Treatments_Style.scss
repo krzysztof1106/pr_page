@@ -48,7 +48,7 @@
 .tp_contentBox{
     box-sizing: border-box;
     position: relative;
-    padding: 2em;
+    padding: 1.5em;
     width: 50%;
     max-width: $MaxWidth * 0.5;
     
@@ -61,7 +61,6 @@
     display: none;
     box-sizing: border-box;
     position: absolute;
-    //background-color: $primaryColor_1;
     border: 7px solid $primaryColor_5;
     z-index: -1;
     height: 60%;
@@ -70,24 +69,43 @@
     left: -7.5%;
 }
 
-//Links row
-.tp_linkContent{
+//Gallery
+.tp_galleryMainBox{
+    margin: 1.5em 0 2em 0;
     width: 100%;
-    padding: 2em 0 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
 }
 
-.tp_linkBox{
-    width: auto;
-    padding: 0 1em;
-    border-right: 1px solid $primaryColor_2;
-    border-bottom: none;
+.tp_galleryContent{
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0 0.75rem;
 
-    &:last-child{
-        border: none;
+    & img{
+        width: 100%;
+    }
+}
+
+.tp_goMoreMainBox{
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    padding-bottom: 100%;
+    background-color: $primaryColor_1;
+}
+
+.tp_goMoreContent{
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    top: 32.5%;
+
+    display: grid;
+    grid-template-rows: 67% 33%;
+    align-items: center;
+    text-align: center;
+
+    & p{
+        font-size: 3.5em;
     }
 }
 
@@ -104,10 +122,10 @@
     .tp_contentBox{
         width: 80% !important;
         max-width: 450px !important;
-        padding: 2em 0 0 0 !important;
+        padding: 1.5em 0 0 0 !important;
 
         &:nth-child(2){
-            padding: 0.75em 0 5em 0 !important;
+            padding: 0.75em 0 1.5em 0 !important;
         }
     }
 
@@ -115,23 +133,17 @@
         display: block;
     }
 
-    //Links
-    .tp_linkContent{
-        flex-direction: column;
+//Gallery
+    .tp_galleryContent{
+        width: 80%;
+        max-width: 450px;
         padding: 0;
     }
-    
-    .tp_linkBox{
-        width: 70%;
-        max-width: 250px;
-        padding: 1em 0;
-        border-right: none;
-        border-bottom: 1px solid $primaryColor_2;
-    
-        &:last-child{
-            border: none;
-            padding-bottom: 0;
+
+    .tp_goMoreContent{
+        & p{
+            font-size: 4.5em;
         }
     }
-
+    
 }

@@ -1,10 +1,10 @@
 import React from 'react';
 
 //Imports
-import FooterCtx from "./FooterContext";
+import FooterCtx from "./Footer_Media";
 
 
-const Footer = (props) => {
+const Footer = () => {
 
     //Facebook
         const fbLink = "https://www.facebook.com/l.lashesstudio";

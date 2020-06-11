@@ -1,6 +1,14 @@
 .hp_treatMobileBox {
   display: none;
-  position: relative;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.hp_treatMobTile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -19,6 +27,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .hp_treatMobilePic {
@@ -43,7 +54,7 @@
 .hp_treatMobileStyle {
   position: absolute;
   height: 50%;
-  width: 100%;
+  width: 300%;
   top: 25%;
   background-color: #d4b6b8;
   z-index: -1;
@@ -56,9 +67,7 @@
 
 @media (max-width: 768px) {
   .hp_treatMobileBox {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
   }
 }
 /*# sourceMappingURL=Home_mobileTreatmentStyle.css.map */

@@ -8,6 +8,7 @@ import LinksSkt from "./LinkSkt";
     const mainMenu = "Strona główna";
     const treatments = "Zabiegi";
     const pricelist = "Cennik";
+    const appointment = "Umów wizytę";
     const team = "Nasz zespół";
     const contact = "Kontakt";
 
@@ -15,6 +16,7 @@ import LinksSkt from "./LinkSkt";
     const mainMenuLink = "";
     const treatmentsLink = "/zabiegi";
     const pricelistLink = "/cennik";
+    const appointmentLink = "/umow_wizyte";
     const teamLink = "/nasz-zespol";
     const contactLink = "/kontakt";
 
@@ -39,6 +41,7 @@ const NavLinks = (props) => {
             <LinksSkt header={mainMenu} link={mainMenuLink} navHeaderClick={props.navLinksClick}/>
             <LinksSkt header={treatments} link={treatmentsLink} navHeaderClick={props.navLinksClick}/>
             <LinksSkt header={pricelist} link={pricelistLink} navHeaderClick={props.navLinksClick}/>
+            <LinksSkt header={appointment} link={appointmentLink} navHeaderClick={props.navLinksClick}/>
             <LinksSkt header={team} link={teamLink} navHeaderClick={props.navLinksClick}/>
             <LinksSkt header={contact} link={contactLink} navHeaderClick={props.navLinksClick}/>
         </div>
