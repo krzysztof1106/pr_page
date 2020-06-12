@@ -7,10 +7,13 @@ const HomeFrontPic = () => {
 
 
     return (
-        <div className="hp_startPic">
+        <div className="hp_frtPic">
             <img src={StartPic} alt="Pink Room - Wrocław" />
-            <div className="hp_frontPicArrow IconStyle">
-                <i className="fas fa-chevron-down"></i>
+            <div className="hp_frtPicArrow">
+                {/* <i className="fas fa-chevron-down"></i> */}
+                <i className="fas fa-long-arrow-alt-down"></i>
+                {/* <i className="fas fa-angle-double-down"></i> */}
+                
             </div>
         </div>
     );

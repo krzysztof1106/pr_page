@@ -11,37 +11,13 @@
     justify-content: center;
 
     flex-direction: row;
-    //V1
     background: transparent;
     background: linear-gradient(90deg, transparent 50%, $primaryColor_1 50%);
-    //V2
-    //background: $primaryColor_1;
-    //background: linear-gradient(90deg, $primaryColor_1 50%, transparent 50%);
-
-    /*
-    clip-path: 
-    polygon(
-      0% 5%,     //top left
-      5% 0%,     //top left
-      95% 0%,    //top right
-      100% 5%,   //top right
-      100% 95%,  //bottom right
-      95% 100%,  //bottom right
-      5% 100%,   //bottom left
-      0 95%      //bottom left
-    );
-    */
 
     &:nth-child(odd){
         flex-direction: row-reverse;
-        //background: $primaryColor_1;
-        //background: linear-gradient(90deg, $primaryColor_1 50%, $primaryColor_5 50%);
-        //V1
         background: $primaryColor_1;
         background: linear-gradient(90deg, $primaryColor_1 50%, transparent 50%);
-        //V2
-        //background: transparent;
-        //background: linear-gradient(90deg, transparent 50%, $primaryColor_1 50%);
     }
 }
 
@@ -62,26 +38,28 @@
     box-sizing: border-box;
     position: absolute;
     border: 7px solid $primaryColor_5;
-    z-index: -1;
     height: 60%;
     width: 115%;
     top: 20%;
     left: -7.5%;
+    z-index: -1;
 }
 
 //Gallery
 .tp_galleryMainBox{
-    margin: 1.5em 0 2em 0;
+    // margin: 1.5em 0 2em 0;
     width: 100%;
 }
 
 .tp_galleryContent{
     box-sizing: border-box;
     margin: auto;
-    padding: 0 0.75rem;
+    // max-width: 450px;
 
     & img{
         width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
 
@@ -90,7 +68,8 @@
     box-sizing: border-box;
     width: 100%;
     padding-bottom: 100%;
-    background-color: $primaryColor_1;
+    background-color: $primaryColor_4;
+    // border: solid 5px #fff;
 }
 
 .tp_goMoreContent{
@@ -105,9 +84,10 @@
     text-align: center;
 
     & p{
-        font-size: 3.5em;
+        font-size: 5em;
     }
 }
+
 
 @media (max-width: 768px){
     .tp_rowBox{
@@ -131,19 +111,6 @@
 
     .tp_styleBox{
         display: block;
-    }
-
-//Gallery
-    .tp_galleryContent{
-        width: 80%;
-        max-width: 450px;
-        padding: 0;
-    }
-
-    .tp_goMoreContent{
-        & p{
-            font-size: 4.5em;
-        }
     }
     
 }

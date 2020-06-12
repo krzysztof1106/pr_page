@@ -6,15 +6,8 @@ import GoForMore from "./Treatments_GoMore";
 
 const TreatGallery = (props)  => {
 
-    let screenWidth = window.innerWidth;
-    let picQTY = 3;
-
-    if(screenWidth < 769){
-        picQTY = 1;
-    }
-
     let params = {
-        slidesPerView: picQTY,
+        slidesPerView: 1,
         spaceBetween: 0,
         // loop: true,
 
@@ -40,12 +33,6 @@ const TreatGallery = (props)  => {
                 </div>
                 <div>
                     <GalleryPic picture = {props.pic3} />
-                </div>
-                <div>
-                    <GalleryPic picture = {props.pic4} />
-                </div>
-                <div>
-                    <GalleryPic picture = {props.pic5} />
                 </div>
                 <div>
                     <GoForMore />

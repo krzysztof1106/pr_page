@@ -52,7 +52,7 @@ const HomeTreatments = (props) => {
                 spaceBetween: 30,
                 el: '.swiper-pagination',
                 clickable: true,
-                //dynamicBullets: true
+                // dynamicBullets: true
             },
             autoplay: {
                 delay: 2500,

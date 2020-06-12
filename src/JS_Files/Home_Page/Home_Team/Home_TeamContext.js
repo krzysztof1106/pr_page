@@ -8,11 +8,9 @@ const HomeTeamCtx = () => {
 
     return (
         <div className="hp_teamContentnBox">
+            <img src={HomeTeamPic} alt="PinkRooom - Wrocław" />
             <div className="hp_teamStyle"></div>
             <div className="hp_teamStyle"></div>
-            <div className="hp_teamPic">
-                <img src={HomeTeamPic} alt="PinkRooom - Wrocław" />
-            </div>
         </div>
     );
 }

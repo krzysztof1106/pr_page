@@ -44,7 +44,7 @@ a, a:link, a:visited, a:active, a:hover {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
-  padding: 2em 0;
+  padding: 1em 0;
   font-size: 14px;
 }
 
@@ -108,6 +108,7 @@ a, a:link, a:visited, a:active, a:hover {
 }
 
 .TopicSideBox {
+  margin-top: 74px;
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -150,6 +151,9 @@ a, a:link, a:visited, a:active, a:hover {
   .ContentBox {
     padding: 0 2em;
   }
+  .TopicSideBox {
+    margin-top: 54px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -176,6 +180,7 @@ a, a:link, a:visited, a:active, a:hover {
   }
   .TopicSideBox {
     width: 100%;
+    margin-top: 54px;
   }
 }
 /*# sourceMappingURL=Main_Style.css.map */
