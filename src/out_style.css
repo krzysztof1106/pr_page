@@ -829,6 +829,7 @@ footer {
 }
 
 .hp_treatMobileRow img {
+  position: relative;
   width: 100%;
   height: auto;
   z-index: 10;
@@ -840,7 +841,7 @@ footer {
   width: 300%;
   top: 25%;
   background-color: #d4b6b8;
-  z-index: 0;
+  z-index: 1;
 }
 
 .hp_treatMobileHeader {

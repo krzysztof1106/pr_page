@@ -8,8 +8,8 @@ const HomeTreatRow = (props) => {
 
         <div className="hp_treatMobTile">
             <div className="hp_treatMobileRow">
-                <div className="hp_treatMobileStyle"></div>
                 <img src={props.picture} alt="PinkRoom - Wrocław" />
+                <div className="hp_treatMobileStyle"></div>
             </div>
             <Link to = {props.link}>
                 <div className="HeaderStyle hp_treatMobileHeader"> {props.header} </div>
