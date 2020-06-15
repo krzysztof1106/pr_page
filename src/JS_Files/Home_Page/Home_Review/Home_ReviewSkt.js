@@ -1,14 +1,15 @@
 import React from 'react';
 
-//All imports
 
-
-
-const HomeReviewSkt = () => {
-
+const HomeReviewSkt = (props) => {
     return (
-        <div>
-            lalalal
+        <div className="hp_revContent">
+            <div className="HeaderStyle hp_revCustomerBox">
+                {props.customer}
+            </div>
+            <div className="hp_revReviewBox">
+                {props.review}
+            </div>
         </div>
     );
 }

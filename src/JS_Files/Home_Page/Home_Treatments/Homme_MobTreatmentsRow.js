@@ -8,7 +8,7 @@ const HomeTreatRow = (props) => {
 
         <div className="hp_treatMobTile">
             <div className="hp_treatMobileRow">
-                <div className="hp_treatMobilePic">
+                <div className="hp_treatMobPicBox">
                     <img src={props.picture} alt="PinkRoom - Wrocław" />
                 </div>
                 <div className="hp_treatMobileStyle"></div>

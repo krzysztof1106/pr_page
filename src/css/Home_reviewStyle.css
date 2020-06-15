@@ -1,5 +1,21 @@
-.hp_revMainBox {
-  background-color: #358C97;
+.hp_revContent {
+  margin: auto;
+  width: 80%;
+  max-width: 250px;
+  padding: 1em;
+  background-color: #fff;
+  border: 2px solid #3C3C3B;
+  border-radius: 20px;
+}
+
+.hp_revCustomerBox {
+  padding: 0.5em;
+  border-bottom: 1px solid #3C3C3B;
+}
+
+.hp_revReviewBox {
+  text-align: justify;
+  padding: 0.5em;
 }
 
 .hp_revTopStyle {

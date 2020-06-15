@@ -11,51 +11,65 @@
      object-fit: cover;
 }
 
-.hp_frtPicArrow {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.hp_frtPicMainBox {
   position: absolute;
-  color: #F9F3F1;
+  bottom: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5em;
+  background-color: rgba(212, 182, 184, 0.75);
+}
+
+.hp_frtPicTopicBox {
+  font-size: 2em;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+}
+
+.hp_frtPicArrow {
+  position: relative;
+  color: #3C3C3B;
   font-size: 3em;
-  padding: 20px;
-  left: 20px;
+  padding: 0 0.75em;
+  left: 0;
   -webkit-animation-name: frontPicArrow;
           animation-name: frontPicArrow;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 
 @-webkit-keyframes frontPicArrow {
   0% {
-    bottom: 30px;
+    top: 0em;
   }
-  15% {
-    bottom: 60px;
+  10% {
+    top: 0.65em;
   }
-  30% {
-    bottom: 30px;
+  20% {
+    top: 0em;
   }
   100% {
-    bottom: 30px;
+    top: 0em;
   }
 }
 
 @keyframes frontPicArrow {
   0% {
-    bottom: 30px;
+    top: 0em;
   }
-  15% {
-    bottom: 60px;
+  10% {
+    top: 0.65em;
   }
-  30% {
-    bottom: 30px;
+  20% {
+    top: 0em;
   }
   100% {
-    bottom: 30px;
+    top: 0em;
   }
 }
 /*# sourceMappingURL=Home_frontPicStyle.css.map */

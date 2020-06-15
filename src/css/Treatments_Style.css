@@ -42,6 +42,9 @@
 
 .tp_contentBox img {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .tp_styleBox {
@@ -80,7 +83,7 @@
           box-sizing: border-box;
   width: 100%;
   padding-bottom: 100%;
-  background-color: #F9F3F1;
+  background-color: #CECDCB;
 }
 
 .tp_goMoreContent {

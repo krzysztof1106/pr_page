@@ -5,8 +5,6 @@ import Swiper from 'react-id-swiper';
 import Topic from "../../_Main_Components/Middle_Topic";
 import MobRow from './Homme_MobTreatmentsRow';
 import PCTreatRow from "./Home_PcTreatmentsRow";
-//import HomePcTreat from "./Home_PcTreatmentsContent";
-//import HomeMobTreat from "./Home_MobTreatmentsContent";
 
 
 //Importowane zdjecia
@@ -23,25 +21,25 @@ const HomeTreatments = (props) => {
         const lashStyle = "hp_treatPcStyle_1";
         const lashHeader = "Stylizacja rzęs";
         const lashDescription = "Przedłużanie rzęs ma ułatwiać życie i podkreślać głębię oczu. Stylizacja rzęs ma na celu powiększyć oko, wydłużyć jego kąciki. Dzięki takiemu zabiegowi możemy zaoszczędzić czas na makijaż i codzienną pielęgnację rzęs.";
-        const lashLink = "/zabiegi";
+        const lashLink = "/stylizacja-rzes";
 
     //Eyebrow
         const eyebrowStyle = "hp_treatPcStyle_2";
         const eyebrowHeader = "Stylizacja brwi";
         const eyebrowDescription = "Przedłużanie rzęs ma ułatwiać życie i podkreślać głębię oczu. Stylizacja rzęs ma na celu powiększyć oko, wydłużyć jego kąciki. Dzięki takiemu zabiegowi możemy zaoszczędzić czas na makijaż i codzienną pielęgnację rzęs.";
-        const eyebrowLink = "/zabiegi";
+        const eyebrowLink = "/stylizacja-brwi";
 
     //Nails
         const nailsStyle = "hp_treatPcStyle_3";
         const nailsHeader = "Stylizaja paznokci";
         const nailsDescription = "Przedłużanie rzęs ma ułatwiać życie i podkreślać głębię oczu. Stylizacja rzęs ma na celu powiększyć oko, wydłużyć jego kąciki. Dzięki takiemu zabiegowi możemy zaoszczędzić czas na makijaż i codzienną pielęgnację rzęs.";
-        const nailsLink = "/zabiegi";
+        const nailsLink = "/stylizacja-paznokci";
 
     //Hair
         const hairStyle = "hp_treatPcStyle_4";
         const hairHeader = "Zabiegi na włosy";
         const hairDescription = "Przedłużanie rzęs ma ułatwiać życie i podkreślać głębię oczu. Stylizacja rzęs ma na celu powiększyć oko, wydłużyć jego kąciki. Dzięki takiemu zabiegowi możemy zaoszczędzić czas na makijaż i codzienną pielęgnację rzęs.";
-        const hairLink = "/zabiegi";
+        const hairLink = "/zabiegi-na-wlosy";
 
     //Swiper parameters
     //Mobile
