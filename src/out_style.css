@@ -479,18 +479,18 @@ footer {
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
 }
 
 @-webkit-keyframes frontPicArrow {
   0% {
     top: 0em;
   }
-  10% {
+  15% {
     top: 0.65em;
   }
-  20% {
+  30% {
     top: 0em;
   }
   100% {
@@ -502,10 +502,10 @@ footer {
   0% {
     top: 0em;
   }
-  10% {
+  15% {
     top: 0.65em;
   }
-  20% {
+  30% {
     top: 0em;
   }
   100% {
@@ -881,16 +881,39 @@ footer {
 }
 
 .hp_revContent {
+  position: relative;
+  z-index: 1;
   margin: auto;
   width: 80%;
-  max-width: 250px;
+  max-width: 350px;
   padding: 1em;
-  background-color: #fff;
-  border: 2px solid #3C3C3B;
-  border-radius: 20px;
+}
+
+.hp_revContent::before {
+  position: absolute;
+  width: 35%;
+  height: 90%;
+  content: '';
+  top: 0;
+  left: 0;
+  border-top: 2px solid #3C3C3B;
+  border-left: 2px solid #3C3C3B;
+}
+
+.hp_revContent::after {
+  position: absolute;
+  width: 35%;
+  height: 90%;
+  content: '';
+  bottom: 0;
+  right: 0;
+  border-bottom: 2px solid #3C3C3B;
+  border-right: 2px solid #3C3C3B;
 }
 
 .hp_revCustomerBox {
+  position: relative;
+  z-index: 2;
   padding: 0.5em;
   border-bottom: 1px solid #3C3C3B;
 }
@@ -898,6 +921,25 @@ footer {
 .hp_revReviewBox {
   text-align: justify;
   padding: 0.5em;
+}
+
+.hp_revSocialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-size: 2em;
+}
+
+.hp_revSocialMedia a {
+  width: 40%;
+}
+
+.hp_revSocialMedia a:first-child {
+  border-right: 1px solid #3C3C3B;
 }
 
 .hp_revTopStyle {

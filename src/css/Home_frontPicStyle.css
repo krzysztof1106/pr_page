@@ -39,18 +39,18 @@
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
 }
 
 @-webkit-keyframes frontPicArrow {
   0% {
     top: 0em;
   }
-  10% {
+  15% {
     top: 0.65em;
   }
-  20% {
+  30% {
     top: 0em;
   }
   100% {
@@ -62,10 +62,10 @@
   0% {
     top: 0em;
   }
-  10% {
+  15% {
     top: 0.65em;
   }
-  20% {
+  30% {
     top: 0em;
   }
   100% {

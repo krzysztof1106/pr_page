@@ -37,13 +37,13 @@
     animation-name: frontPicArrow;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    animation-duration: 4s;
+    animation-duration: 2.5s;
 }
 
 @keyframes frontPicArrow {
     0%      {top: 0em;}
-    10%     {top: 0.65em;}
-    20%     {top: 0em;}
+    15%     {top: 0.65em;}
+    30%     {top: 0em;}
     100%    {top: 0em;}
 }
 

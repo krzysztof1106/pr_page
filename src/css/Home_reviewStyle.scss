@@ -1,23 +1,44 @@
 @import "./Variables_Style.scss";
 
 
-.hp_revMainBox{
-
-}
-
 .hp_revContent{
+    position: relative;
+    z-index: 1;
     margin: auto;
     width: 80%;
-    max-width: 250px;
+    max-width: 350px;
     padding: 1em;
 
-    // background-color: rgba($primaryColor_4, 0.1);
-    background-color: #fff;
-    border: 2px solid $primaryColor_2;
-    border-radius: 20px;
+    // background-color: rgba($primaryColor_1, 0.25);
+    // background-color: $primaryColor_1;
+    // background-color: #fff;
+    // border: 2px solid $primaryColor_2;
+    // border-radius: 5px;
+
+    &::before {
+        position: absolute;
+        width: 35%;
+        height: 90%;
+        content: '';
+        top: 0; left: 0;
+        border-top: 2px solid $primaryColor_2;
+        border-left: 2px solid $primaryColor_2;
+    }
+
+    &::after {
+        position: absolute;
+        width: 35%;
+        height: 90%;
+        content: '';
+        bottom: 0; right: 0;
+        border-bottom: 2px solid $primaryColor_2;
+        border-right: 2px solid $primaryColor_2;
+    }
 }
 
 .hp_revCustomerBox{
+    position: relative;
+    z-index: 2;
     padding: 0.5em;
     border-bottom: 1px solid $primaryColor_2;
 }
@@ -26,6 +47,21 @@
     text-align: justify;
     padding: 0.5em;
     // height: 50px;
+}
+
+.hp_revSocialMedia{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2em;
+
+    & a{
+        width: 40%;
+
+        &:first-child{
+            border-right: 1px solid $primaryColor_2;
+        }
+    }
 }
 
 

@@ -19,7 +19,7 @@ const HomeFrontPic = () => {
                     </div>
                 </div>
                 <div className="hp_frtPicArrow">
-                    <i className="fas fa-long-arrow-alt-down"></i>
+                    <i className="fas fa-chevron-down"></i>
                 </div>
             </div>
         </div>
@@ -29,4 +29,5 @@ const HomeFrontPic = () => {
 export default HomeFrontPic;
 
 /* <i className="fas fa-chevron-down"></i> */
+/* <i className="fas fa-long-arrow-alt-down"></i> */
 /* <i className="fas fa-angle-double-down"></i> */
