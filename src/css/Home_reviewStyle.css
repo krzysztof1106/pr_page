@@ -29,7 +29,7 @@
   border-right: 2px solid #3C3C3B;
 }
 
-.hp_revCustomerBox {
+.hp_revHeadMainBox {
   position: relative;
   z-index: 2;
   padding: 0.5em;
@@ -39,6 +39,20 @@
 .hp_revReviewBox {
   text-align: justify;
   padding: 0.5em;
+}
+
+.hp_revCustBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hp_revCustPic {
+  width: 3em;
+  padding-right: 0.5em;
 }
 
 .hp_revSocialMedia {
@@ -58,15 +72,5 @@
 
 .hp_revSocialMedia a:first-child {
   border-right: 1px solid #3C3C3B;
-}
-
-.hp_revTopStyle {
-  border-left: 100vw solid #f2e7e3;
-  border-bottom: 10vw solid #358C97;
-}
-
-.hp_revBotStyle {
-  border-right: 100vw solid #358C97;
-  border-bottom: 10vw solid #d4b6b8;
 }
 /*# sourceMappingURL=Home_reviewStyle.css.map */

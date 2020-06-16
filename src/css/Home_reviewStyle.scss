@@ -9,12 +9,6 @@
     max-width: 350px;
     padding: 1em;
 
-    // background-color: rgba($primaryColor_1, 0.25);
-    // background-color: $primaryColor_1;
-    // background-color: #fff;
-    // border: 2px solid $primaryColor_2;
-    // border-radius: 5px;
-
     &::before {
         position: absolute;
         width: 35%;
@@ -36,7 +30,7 @@
     }
 }
 
-.hp_revCustomerBox{
+.hp_revHeadMainBox{
     position: relative;
     z-index: 2;
     padding: 0.5em;
@@ -46,7 +40,16 @@
 .hp_revReviewBox{
     text-align: justify;
     padding: 0.5em;
-    // height: 50px;
+}
+
+.hp_revCustBox{
+    display: flex;
+    align-items: center;
+}
+
+.hp_revCustPic{
+    width: 3em;
+    padding-right: 0.5em;
 }
 
 .hp_revSocialMedia{
@@ -62,14 +65,4 @@
             border-right: 1px solid $primaryColor_2;
         }
     }
-}
-
-
-.hp_revTopStyle{
-    border-left: 100vw solid $primaryColor_3;
-    border-bottom: 10vw solid $primaryColor_6;
-}
-.hp_revBotStyle{
-    border-right: 100vw solid $primaryColor_6;
-    border-bottom: 10vw solid $primaryColor_1;
 }

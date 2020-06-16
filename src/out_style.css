@@ -33,6 +33,14 @@ footer {
           box-sizing: border-box;
 }
 
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 a, a:link, a:visited, a:active, a:hover {
   text-decoration: none;
   color: #3C3C3B;
@@ -627,22 +635,31 @@ footer {
   position: relative;
   margin: auto;
   width: 60%;
-  max-width: 550px;
+  max-width: 650px;
 }
 
 .hp_teamContentnBox img {
   position: relative;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
   z-index: 2;
+}
+
+.hp_teamGFM {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  z-index: 3;
+  text-align: end;
+  width: 100%;
+  padding: 0.75em;
+  background-color: rgba(212, 182, 184, 0.6);
 }
 
 .hp_teamStyle {
   position: absolute;
   width: 75%;
-  height: 80%;
-  top: 10%;
+  height: 60%;
+  top: 20%;
   left: 50%;
   z-index: 1;
   background-color: rgba(27, 70, 76, 0.8);
@@ -656,7 +673,10 @@ footer {
 @media (max-width: 768px) {
   .hp_teamContentnBox {
     width: 80%;
-    max-width: 450px;
+    max-width: 550px;
+  }
+  .hp_teamGFM {
+    text-align: center;
   }
 }
 
@@ -911,7 +931,7 @@ footer {
   border-right: 2px solid #3C3C3B;
 }
 
-.hp_revCustomerBox {
+.hp_revHeadMainBox {
   position: relative;
   z-index: 2;
   padding: 0.5em;
@@ -921,6 +941,20 @@ footer {
 .hp_revReviewBox {
   text-align: justify;
   padding: 0.5em;
+}
+
+.hp_revCustBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hp_revCustPic {
+  width: 3em;
+  padding-right: 0.5em;
 }
 
 .hp_revSocialMedia {
@@ -940,16 +974,6 @@ footer {
 
 .hp_revSocialMedia a:first-child {
   border-right: 1px solid #3C3C3B;
-}
-
-.hp_revTopStyle {
-  border-left: 100vw solid #f2e7e3;
-  border-bottom: 10vw solid #358C97;
-}
-
-.hp_revBotStyle {
-  border-right: 100vw solid #358C97;
-  border-bottom: 10vw solid #d4b6b8;
 }
 
 .tp_rowBox {
@@ -1012,6 +1036,50 @@ footer {
   top: 20%;
   left: -7.5%;
   z-index: -1;
+}
+
+.tp_dropdownMainBox {
+  width: 100%;
+}
+
+.tp_dropdownHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+.tp_dropdownHeader p {
+  width: auto;
+  padding: 0 0.5em;
+  border-right: 1px solid #3C3C3B;
+}
+
+.tp_dropdownHeader p:first-child {
+  padding-left: 0;
+}
+
+.tp_dropdownHeader p:last-child {
+  border: 0;
+}
+
+.tp_dropdownContent {
+  position: relative;
+  width: 100%;
+  -webkit-transition: display 3s ease;
+  transition: display 3s ease;
+}
+
+.tp_dropdownContent-Active {
+  -webkit-transition: display 3s ease;
+  transition: display 3s ease;
+  display: block;
+}
+
+.tp_dropdownContent-Deactive {
+  -webkit-transition: all 3s ease;
+  transition: all 3s ease;
+  display: none;
 }
 
 .tp_galleryMainBox {

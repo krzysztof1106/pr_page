@@ -47,6 +47,47 @@
     z-index: -1;
 }
 
+//Dropdown
+.tp_dropdownMainBox{
+    width: 100%;
+}
+
+.tp_dropdownHeader{
+    display: flex;
+    cursor: pointer;
+
+    & p{
+        width: auto;
+        padding: 0 0.5em;
+        border-right: 1px solid $primaryColor_2;
+
+        &:first-child{
+            padding-left: 0;
+        }
+
+        &:last-child{
+            border: 0;
+        }
+    }
+}
+
+.tp_dropdownContent{
+    position: relative;
+    width: 100%;
+    transition: display 3s ease;
+}
+
+.tp_dropdownContent-Active{
+    transition: display 3s ease;
+    display: block;
+}
+
+.tp_dropdownContent-Deactive{
+    transition: all 3s ease;
+    display: none;
+}
+
+
 //Gallery
 .tp_galleryMainBox{
     // margin: 1.5em 0 2em 0;

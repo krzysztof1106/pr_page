@@ -28,6 +28,7 @@ class Navbar extends React.Component{
             });
         }
     };
+    
 
 
 render() {
@@ -45,7 +46,7 @@ render() {
             </div>
         </nav>
     );
-    };
+};
 
 };
 export default Navbar;

@@ -33,6 +33,14 @@ footer {
           box-sizing: border-box;
 }
 
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 a, a:link, a:visited, a:active, a:hover {
   text-decoration: none;
   color: #3C3C3B;

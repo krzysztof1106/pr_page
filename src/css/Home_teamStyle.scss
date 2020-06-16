@@ -5,21 +5,31 @@
     position: relative;
     margin: auto;
     width: 60%;
-    max-width: 550px;
+    max-width: 650px;
 
     & img{
         position: relative;
-        object-fit: cover;
-        width: 100%;
         z-index: 2;
     }
+}
+
+.hp_teamGFM{
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+    text-align: end;
+    width: 100%;
+    padding: 0.75em;
+    background-color: rgba($primaryColor_1, 0.6);
+
 }
 
 .hp_teamStyle{
     position: absolute;
     width: 75%;
-    height: 80%;
-    top: 10%;
+    height: 60%;
+    top: 20%;
     left: 50%;
     z-index: 1;
     background-color: $primaryColor_5;
@@ -33,6 +43,10 @@
 @media (max-width: 768px){
     .hp_teamContentnBox{
         width: 80%;
-        max-width: 450px;
+        max-width: 550px;
+    }
+    
+    .hp_teamGFM{
+        text-align: center;
     }
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Drop from './Treatments_Dropdown';
 
 const TreatRow = (props)  => {
     return (
@@ -14,6 +15,9 @@ const TreatRow = (props)  => {
                 </div>
                 <div>
                     {props.description}
+                </div>
+                <div>
+                    <Drop />
                 </div>
             </div>
         </div>

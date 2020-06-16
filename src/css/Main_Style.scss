@@ -33,6 +33,12 @@ footer{
     box-sizing: border-box;
 }
 
+img{
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
 
 //******************************************************
