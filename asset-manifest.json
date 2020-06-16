@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/pr_page/static/css/main.d01b34c2.chunk.css",
-    "main.js": "/pr_page/static/js/main.f967aee1.chunk.js",
-    "main.js.map": "/pr_page/static/js/main.f967aee1.chunk.js.map",
+    "main.css": "/pr_page/static/css/main.1ac25604.chunk.css",
+    "main.js": "/pr_page/static/js/main.2f2e5457.chunk.js",
+    "main.js.map": "/pr_page/static/js/main.2f2e5457.chunk.js.map",
     "runtime-main.js": "/pr_page/static/js/runtime-main.d2967837.js",
     "runtime-main.js.map": "/pr_page/static/js/runtime-main.d2967837.js.map",
-    "static/js/2.3da9bf8b.chunk.js": "/pr_page/static/js/2.3da9bf8b.chunk.js",
-    "static/js/2.3da9bf8b.chunk.js.map": "/pr_page/static/js/2.3da9bf8b.chunk.js.map",
+    "static/js/2.b793a19d.chunk.js": "/pr_page/static/js/2.b793a19d.chunk.js",
+    "static/js/2.b793a19d.chunk.js.map": "/pr_page/static/js/2.b793a19d.chunk.js.map",
     "index.html": "/pr_page/index.html",
-    "precache-manifest.822cf86da1901cd9b3c372c5e2330d4a.js": "/pr_page/precache-manifest.822cf86da1901cd9b3c372c5e2330d4a.js",
+    "precache-manifest.7cb5ba80663dcae8c1ce992d52dd9560.js": "/pr_page/precache-manifest.7cb5ba80663dcae8c1ce992d52dd9560.js",
     "service-worker.js": "/pr_page/service-worker.js",
-    "static/css/main.d01b34c2.chunk.css.map": "/pr_page/static/css/main.d01b34c2.chunk.css.map",
-    "static/js/2.3da9bf8b.chunk.js.LICENSE.txt": "/pr_page/static/js/2.3da9bf8b.chunk.js.LICENSE.txt",
+    "static/css/main.1ac25604.chunk.css.map": "/pr_page/static/css/main.1ac25604.chunk.css.map",
+    "static/js/2.b793a19d.chunk.js.LICENSE.txt": "/pr_page/static/js/2.b793a19d.chunk.js.LICENSE.txt",
     "static/media/Contact_MapPic.jpg": "/pr_page/static/media/Contact_MapPic.0f6fb33e.jpg",
     "static/media/Front_Pic2.jpg": "/pr_page/static/media/Front_Pic2.3b17fad6.jpg",
-    "static/media/Home_TeamPic_1.jpg": "/pr_page/static/media/Home_TeamPic_1.4f286d94.jpg",
+    "static/media/Home_TeamPic_2.jpg": "/pr_page/static/media/Home_TeamPic_2.e12c0c99.jpg",
     "static/media/MAPA.jpg": "/pr_page/static/media/MAPA.0f6fb33e.jpg",
     "static/media/TestPic.jpg": "/pr_page/static/media/TestPic.a748dd73.jpg",
     "static/media/all.css": "/pr_page/static/media/fa-solid-900.ec763292.svg",
+    "static/media/lolek.jpg": "/pr_page/static/media/lolek.1c84f306.jpg",
     "static/media/styliacjaWlosow.jpg": "/pr_page/static/media/styliacjaWlosow.a748dd73.jpg",
     "static/media/stylizacjaBrwi.jpg": "/pr_page/static/media/stylizacjaBrwi.c4066639.jpg",
     "static/media/stylizacjaPaznokci.jpg": "/pr_page/static/media/stylizacjaPaznokci.c4066639.jpg",
@@ -25,8 +26,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.d2967837.js",
-    "static/js/2.3da9bf8b.chunk.js",
-    "static/css/main.d01b34c2.chunk.css",
-    "static/js/main.f967aee1.chunk.js"
+    "static/js/2.b793a19d.chunk.js",
+    "static/css/main.1ac25604.chunk.css",
+    "static/js/main.2f2e5457.chunk.js"
   ]
 }
