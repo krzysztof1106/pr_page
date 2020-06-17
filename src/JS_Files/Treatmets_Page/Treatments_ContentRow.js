@@ -1,27 +1,24 @@
 import React from 'react';
 
-import Drop from './Treatments_Dropdown';
 
 const TreatRow = (props)  => {
     return (
         <div className="tp_rowBox">
             <div className="tp_contentBox">
-                    {props.gallery}
+                {props.gallery}
                 <div className="tp_styleBox"></div>
             </div>
             <div className="tp_contentBox">
-                <div className="HeaderStyle">
-                    {props.header}
-                </div>
-                <div>
-                    {props.description}
-                </div>
-                <div>
-                    <Drop />
-                </div>
+                {props.content}
+                {props.drop_1}
+                {props.drop_2}
+                {props.drop_3}
             </div>
         </div>
     );
 }
 
 export default TreatRow;
+
+
+

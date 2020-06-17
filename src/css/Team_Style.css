@@ -29,18 +29,12 @@
 }
 
 .team_contentBox {
-  position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 2em;
+  position: relative;
+  padding: 1.5em;
   width: 50%;
   max-width: 589.5px;
-}
-
-.team_contentBox img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
 }
 
 .team_skillsBox {
@@ -72,10 +66,10 @@
   .team_contentBox {
     width: 80% !important;
     max-width: 450px !important;
-    padding: 2em 0 0 0 !important;
+    padding: 1.5em 0 0 0 !important;
   }
   .team_contentBox:nth-child(2) {
-    padding: 0.75em 0 5em 0 !important;
+    padding: 0.75em 0 2em 0 !important;
   }
   .team_styleBox {
     display: block;

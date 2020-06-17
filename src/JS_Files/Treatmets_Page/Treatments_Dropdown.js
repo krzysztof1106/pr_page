@@ -1,67 +1,59 @@
 import React from 'react';
 
-import DropHead from './Treatments_DropdownHeader';
-import DropCont from './Treatments_DropdownContent';
-
-// const TreatDrop = (props)  => {
 
 class TreatDrop extends React.Component{
 
     constructor(props){
         super(props);
         this.state = {
-            dropStatus_1: false,
-            dropStatus_2: false,
+            dropStatus: false,
+            width: 35,
         };
     };
-    
-    OpenContent_1 = () => {
+
+    SwitchContent = () => {
         this.setState((prevState) => {
-            if (this.state.dropStatus_2){
-                return {
-                    dropStatus_1: !prevState.dropStatus_1,
-                    dropStatus_2: !prevState.dropStatus_2,
-                };
-            }
-            else{
-                return {
-                    dropStatus_1: !prevState.dropStatus_1,
-                };
-            }
+            return {
+                dropStatus: !prevState.dropStatus,
+            };
+        });
+        this.setState({
+            height: this.refs.inner.clientHeight
         });
     };
 
-    OpenContent_2 = () => {
-        this.setState((prevState) => {
-            if (this.state.dropStatus_1){
-                return {
-                    dropStatus_1: !prevState.dropStatus_1,
-                    dropStatus_2: !prevState.dropStatus_2,
-                };
-            }
-            else{
-                return {
-                    dropStatus_2: !prevState.dropStatus_2,
-                };
-            }
-        });
-    };
-    
+    // StyleBarHover = () => {
+    //     if(this.dropStatus){
+    //         this.setState({
+    //             color: "#fff",
+    //     })};
+    // };
 
-    render() {
+
+    render () {
+
+        const {dropHeader, dropContent} = this.props;
+        const {dropStatus, height, width, color} = this.state;
+        const currentheight = dropStatus ? height: 0;
+        const styleBar = dropStatus ? width: 4;
+
+
         return (
             <div className="tp_dropdownMainBox">
-                <div className="HeaderStyle tp_dropdownHeader">
-                    <DropHead dropHeader="Pielengnacja" clickStatus={this.OpenContent_1}/>
-                    <DropHead dropHeader="Przeciwwskazania" clickStatus={this.OpenContent_2}/>
+                <div className="HeaderStyle tp_dropdownHeader" onClick={this.SwitchContent}>
+                    <div onMouseOver={this.StyleBarHover} className="tp_dropdownHeadStyle tp_dropdownHeadStyle-Deactive" style={{width: styleBar + 'px', backgroundColor: color}}></div>
+                    <div>
+                        {dropHeader}
+                    </div>
                 </div>
-                <div className="tp_dropdownContent">
-                    <DropCont dropContent="Pielengnacja" dropdownStatus={this.state.dropStatus_1}/>
-                    <DropCont dropContent="Przeciwwskazania" dropdownStatus={this.state.dropStatus_2}/>
+                <div className="tp_dropdownContent" style={{height: currentheight + 'px'}}>
+                    <div ref="inner">
+                        {dropContent}
+                    </div>
                 </div>
         </div>
         );
-    };
+    }
+    
 };
 export default TreatDrop;
-

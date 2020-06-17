@@ -1,5 +1,5 @@
 import React from 'react';
-import LashContent from './Treatments_Lashes';
+import LashContent from '../Treatments_Lashes';
 
 const LashTreatments = ()  => {
     return (

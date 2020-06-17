@@ -12,11 +12,6 @@
   width: 60%;
 }
 
-.hp_mapContentBox img {
-  width: 100%;
-  height: 100%;
-}
-
 @media (min-width: 769px) and (max-width: 1179px) {
   .hp_mapContentBox {
     width: 80%;
