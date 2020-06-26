@@ -1,17 +1,17 @@
 import React from 'react';
 
     
-const SidebarBgd = (props) => {
+const SidebarBgr = (props) => {
 
-    let sidebarBacgroundClassName = "nav_sidebarBackground nav_sidebarBackground-Deactive";
+    let bacgroundClass = "nav_sidebarBackground nav_sidebarBackground-Deactive";
 
-    if(props.sidebarBgdStatus){
-        sidebarBacgroundClassName = "nav_sidebarBackground nav_sidebarBackground-Active";
+    if(props.sideBgrStatus){
+        bacgroundClass = "nav_sidebarBackground nav_sidebarBackground-Active";
     }
 
     return (
-            <div className={sidebarBacgroundClassName}></div>
+            <div className={bacgroundClass}></div>
     );
 }
 
-export default SidebarBgd;
+export default SidebarBgr;

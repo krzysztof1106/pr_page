@@ -35,14 +35,11 @@
 
 
 //******************************************************
-//Links Box
+//Main Links
 .nav_mainLinksBox{
     display: flex;
     text-align: center;
     align-items: center;
-    
-    //justify-content: space-between;
-    //width: 50%;
 }
 
 .nav_linksActive{
@@ -60,9 +57,9 @@
 //nav-links animation
 .nav_linkHeader {
     position: relative;
-    margin-left: 2rem;
-    margin-bottom: 0;
-
+    cursor: pointer;
+    margin: 1em; 
+    
     &:before {
         content: '';
         width: 0%;
@@ -90,6 +87,25 @@
         right: 0%;
         width: 100%;
     }
+}
+
+
+//******************************************************
+//Main Links
+.nav_subbarMainBox{
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+}
+
+.nav_subbarSubBox{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    flex-direction: row;
+    background-color: $primaryColor_1;
 }
 
 
@@ -160,8 +176,7 @@
 @media screen and (max-width: 1180px) {
 
     .nav_linkHeader {
-        margin-left: 0;       
-        margin-bottom: 3rem;
+        margin-top: 3em;
     }
 
     .nav_mainBarBox{
@@ -174,7 +189,7 @@
         flex-direction: column;
         height: auto;
 
-        top: 84px;
+        top: 54px;
         left: 0px;
         width: 100%;
     }
@@ -189,5 +204,12 @@
 
     .burgerToggle{
         display: block;
+    }
+
+    .nav_subbarSubBox{
+        justify-content:start;
+        background-color: $sidebarColor;
+        flex-direction: column;
+        height: 100vh;
     }
 }

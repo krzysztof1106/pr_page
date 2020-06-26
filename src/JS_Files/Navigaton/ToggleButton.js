@@ -3,14 +3,14 @@ import React from 'react';
 
 const ToggleBtn = (props) => {
 
-    let buttonClassList = "burgerToggle";
+    let buttonClass = "burgerToggle";
 
     if (props.buttonStatus){
-        buttonClassList = "burgerToggle toggle"
+        buttonClass = "burgerToggle toggle"
     }
 
     return(
-        <div className={buttonClassList} onClick={props.click}>
+        <div className={buttonClass} onClick={props.buttonClick}>
             <div className="burgerLine_1 burgerToggleBar burgerToggleBar_2"></div>
             <div className="burgerLine_2 burgerToggleBar burgerToggleBar_2"></div>
             <div className="burgerLine_3 burgerToggleBar burgerToggleBar_2"></div>

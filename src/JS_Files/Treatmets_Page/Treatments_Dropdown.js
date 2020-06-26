@@ -22,19 +22,12 @@ class TreatDrop extends React.Component{
         });
     };
 
-    // StyleBarHover = () => {
-    //     if(this.dropStatus){
-    //         this.setState({
-    //             color: "#fff",
-    //     })};
-    // };
-
 
     render () {
 
         const {dropHeader, dropContent} = this.props;
         const {dropStatus, height, width, color} = this.state;
-        const currentheight = dropStatus ? height: 0;
+        const currentHeight = dropStatus ? height: 0;
         const styleBar = dropStatus ? width: 4;
 
 
@@ -46,7 +39,7 @@ class TreatDrop extends React.Component{
                         {dropHeader}
                     </div>
                 </div>
-                <div className="tp_dropdownContent" style={{height: currentheight + 'px'}}>
+                <div className="tp_dropdownContent" style={{height: currentHeight + 'px'}}>
                     <div ref="inner">
                         {dropContent}
                     </div>

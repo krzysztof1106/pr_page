@@ -1,15 +1,14 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-    
-const LinksSkt = (props) => {
+const LinkGo = (props) => {
 
     return (
         <div className="nav_linkHeader">
-            <Link to={props.link} >
-                <div onClick={props.navHeaderClick}>
+            <Link to={props.linkLink} >
+                <div onClick={props.linkClick}>
                     <div>
-                        {props.header}
+                        {props.linkHeader}
                     </div>
                 </div>
             </Link>
@@ -17,4 +16,4 @@ const LinksSkt = (props) => {
     );
 }
 
-export default LinksSkt;
+export default LinkGo;

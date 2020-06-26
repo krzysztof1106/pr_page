@@ -4,17 +4,19 @@ import {Link} from 'react-router-dom';
 
 const NavLogo = (props) => {
 
+    let linkStatus;
 
-    let navLogoSA;
-
-    if(props.navLogoSS){
-        navLogoSA = props.navLogoClick;
+    if(props.mainLinksStatus){
+        linkStatus = props.navLogoClick;
+    }
+    else if(props.subLinksStatus > 0){
+        linkStatus = props.navLogoClick;
     }
 
     return (
         <Link to=''>
-            <div className="nav_logoBox" onClick={navLogoSA}>
-                        Pink
+            <div className="nav_logoBox" onClick={linkStatus}>
+                Pink
             </div>
         </Link>
     );

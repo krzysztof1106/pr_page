@@ -2,48 +2,43 @@ import React from 'react';
 
 
 //Imports
-import LinksSkt from "./LinkSkt";
+import LinkGo from "./LinkItem_Go";
+import LinkStay from "./LinkItem_Stay";
 
 //Name
     const mainMenu = "Strona główna";
-    const treatments = "Zabiegi";
-    const pricelist = "Cennik";
-    const appointment = "Umów wizytę";
-    const team = "Nasz zespół";
-    const contact = "Kontakt";
-
-//Links
     const mainMenuLink = "";
-    const treatmentsLink = "/zabiegi";
-    const pricelistLink = "/cennik";
-    const appointmentLink = "/umow_wizyte";
-    const teamLink = "/nasz-zespol";
-    const contactLink = "/kontakt";
 
+    const treatments = "Zabiegi";
+
+    const pricelist = "Cennik";
+    const pricelistLink = "/cennik";
+
+    const appointment = "Umów wizytę";
+    const appointmentLink = "/umow_wizyte";
+
+    const team = "Nasz zespół";
+    const teamLink = "/nasz-zespol";
+
+    const contact = "Kontakt";
+    const contactLink = "/kontakt";
 
 const NavLinks = (props) => {
 
-    /*
-    let currentDisplayHeight = window.innerHeight;   
-    let sidebarHeight = currentDisplayHeight - 162;;
-    style={{ height: sidebarHeight}}
-    */
-
-    let navbarClassName = "nav_mainLinksBox nav_linksDeactive";
+    let mainLinksClass = "nav_mainLinksBox nav_linksDeactive";
     
     if (props.sidebarStatus){
-        navbarClassName = "nav_mainLinksBox nav_linksActive";
+        mainLinksClass = "nav_mainLinksBox nav_linksActive";
     };
 
-
     return(
-        <div className={navbarClassName}>
-            <LinksSkt header={mainMenu} link={mainMenuLink} navHeaderClick={props.navLinksClick}/>
-            <LinksSkt header={treatments} link={treatmentsLink} navHeaderClick={props.navLinksClick}/>
-            <LinksSkt header={pricelist} link={pricelistLink} navHeaderClick={props.navLinksClick}/>
-            <LinksSkt header={appointment} link={appointmentLink} navHeaderClick={props.navLinksClick}/>
-            <LinksSkt header={team} link={teamLink} navHeaderClick={props.navLinksClick}/>
-            <LinksSkt header={contact} link={contactLink} navHeaderClick={props.navLinksClick}/>
+        <div className={mainLinksClass}>
+            <LinkGo linkHeader={mainMenu} linkLink={mainMenuLink} linkClick={props.mainLinks}/>
+            <LinkStay linkHeader={treatments} linkClick={props.subLinks}/>
+            <LinkGo linkHeader={pricelist} linkLink={pricelistLink} linkClick={props.mainLinks}/>
+            <LinkGo linkHeader={appointment} linkLink={appointmentLink} linkClick={props.mainLinks}/>
+            <LinkGo linkHeader={team} linkLink={teamLink} linkClick={props.mainLinks}/>
+            <LinkGo linkHeader={contact} linkLink={contactLink} linkClick={props.mainLinks}/>
         </div>
     );
 };
